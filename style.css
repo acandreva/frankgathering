@@ -1,0 +1,64 @@
+/*
+Theme Name: Allison Blank Theme
+Theme URI: URL for Allison Blank
+Author: Allison Logan
+Description: Blank theme for WIE course
+Version: 1.0
+License: Open
+Text Domain: allison_logan_blank_template
+*/
+
+@import url("css/skeleton.css");
+@import url("css/normalize.css");
+
+* {
+    color: #000000;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.clear {clear: both;}
+
+h1 {font-size: 3.0rem;}
+h2 {font-size: 2.6rem;}
+h3 {font-size: 2.3rem;}
+h4 {font-size: 2.1rem;}
+h5 {font-size: 1.6rem;}
+h6 {font-size: 1.1rem;}
+
+/*--- Menu --- */
+
+.blank-menu-header {
+    text-align: left;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.blank-menu-header ul {
+    margin: 0; 
+    padding: 0; 
+    list-style-type: none; 
+    list-style-image: none; 
+}
+
+.blank-menu-header li {
+    display: inline;
+}
+
+.blank-menu-header ul li a {
+    text-decoration: none;  
+    margin: 4px;
+    padding: 5px 0px 5px 40px; 
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+
+.blank-menu-header ul li a:hover {
+    color: #cccccc;
+}
+
+/*--Front Page--*/
+.post-thumbnail-container {
+    padding: 2px;
+    margin: 0 10px 10px 0;
+}
