@@ -29,33 +29,57 @@ h6 {font-size: 1.1rem;}
 
 /*--- Menu --- */
 
-.blank-menu-header {
+.main-menu-header {
     text-align: left;
     margin-top: 40px;
     margin-bottom: 40px;
 }
 
-.blank-menu-header ul {
+.main-menu-header ul {
     margin: 0; 
     padding: 0; 
     list-style-type: none; 
     list-style-image: none; 
 }
 
-.blank-menu-header li {
+.main-menu-header li {
     display: inline;
 }
 
-.blank-menu-header ul li a {
+.main-menu-header ul li a {
     text-decoration: none;  
-    margin: 4px;
-    padding: 5px 0px 5px 40px; 
+    margin: 10px;
+    padding: 5px 0px 5px; 
     font-weight: 300;
-    font-size: 1.1rem;
+    font-size: 16px;
+	color: #000;
 }
 
-.blank-menu-header ul li a:hover {
-    color: #cccccc;
+.main-menu-header ul li a:hover {
+    color: #C54E90;
+}
+
+.main-menu-header ul li.current-menu-item a {
+	text-decoration: underline;
+    color: #C54E90;
+}
+
+/*--Search Box Styles--*/
+.searchform {
+	height: 34px;
+	border: 1px solid #000;
+	width: 800px;
+}
+
+.searchform input[type="text"] {
+	width: 75%;
+	height: 30px;
+}
+
+.searchform input[type="submit"] {
+	border: none;
+	width: 20%;
+	padding: 0;
 }
 
 /*--Front Page--*/

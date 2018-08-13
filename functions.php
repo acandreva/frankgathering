@@ -1,5 +1,12 @@
 <?php
 
+/*-------------- Enqueue Styles--------------- */
+
+function add_theme_scripts() {
+  wp_enqueue_style( 'style', get_stylesheet_uri() );
+}
+add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
+
 /*-------------- Enable Widgets--------------- */
 
 function blank_widgets_init() {
@@ -46,7 +53,27 @@ function blank_widgets_init() {
 add_action('widgets_init', 'blank_widgets_init');
 
 /*-------------- Enable Menu--------------- */
-add_theme_support('menus');
+/*add_theme_support('menus');*/
+
+function register_my_menus() {
+  register_nav_menus(
+    array(
+      'main-menu' => __( 'Main Menu' ),
+      'footer-menu' => __( 'Footer Menu' )
+    )
+  );
+}
+add_action( 'init', 'register_my_menus' );
+
+/*----- Add Search Box to Main Menu -----*/
+function frank_nav_search($items, $args) {
+    // If this isn't the header menu, do nothing
+    if( !($args->theme_location == 'main-menu') ) 
+    return $items;
+    // Otherwise, add search form
+    return $items . '<li>' . get_search_form(false) . '</li>';
+}
+add_filter('wp_nav_menu_items', 'frank_nav_search', 10, 2);
 
 /*-------------- Enable Post Thumbnails--------------- */
 add_theme_support('post-thumbnails');
