@@ -20,6 +20,16 @@
                     'container_class' => 'main-menu-header'
                 )); ?>
                 </nav>
+	
+				<?php if ( has_nav_menu( 'social-links' ) ) : ?>
+            	<nav class="social-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Social Links', 'frank-gathering' ); ?>">
+				<?php wp_nav_menu(array(
+                        'theme_location' => 'social-links',
+                        'depth'          => 1,
+                        'container_class'     => 'social-links-menu'
+                 ) ); ?>
+                 </nav>
+				<?php endif; ?>
             </div>
         </header>
     <!--<div class="row">
