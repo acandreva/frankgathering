@@ -7,6 +7,14 @@ function add_theme_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
 
+
+function enqueue_icon_stylesheet() {
+	wp_register_style( 'fontawesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' );
+	wp_enqueue_style( 'fontawesome');
+}
+add_action( 'wp_enqueue_scripts', 'enqueue_icon_stylesheet' );
+
+
 /*-------------- Enable Widgets--------------- */
 
 function blank_widgets_init() {

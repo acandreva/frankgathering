@@ -26,8 +26,10 @@
 				<?php wp_nav_menu(array(
                         'theme_location' => 'social-links',
                         'depth'          => 1,
-                        'container_class'     => 'social-links-menu'
-                 ) ); ?>
+                        'container_class'     => 'social-links-menu',
+						'link_before'    => '<span class="screen-reader-text">',
+						'link_after'     => '</span>',                 
+				 ) ); ?>
                  </nav>
 				<?php endif; ?>
             </div>
