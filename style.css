@@ -27,12 +27,24 @@ h4 {font-size: 2.1rem;}
 h5 {font-size: 1.6rem;}
 h6 {font-size: 1.1rem;}
 
+.container {
+	max-width: 1200px;
+}
+
 /*--- Menu --- */
+
+.siteheader {
+	margin-left: 0;
+}
+
+.sitenav {
+	float:left;
+}
 
 .main-menu-header {
     text-align: left;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 50px;
+    margin-bottom: 30px;
 }
 
 .main-menu-header ul {
@@ -64,11 +76,13 @@ h6 {font-size: 1.1rem;}
     color: #C54E90;
 }
 
-/*--Search Box Styles--*/
+/*--Search Box Styles--
 .searchform {
 	height: 34px;
 	border: 1px solid #000;
-	width: 800px;
+	width: 100px;
+	margin: 0 15px 0 0;
+	float: left;
 }
 
 .searchform input[type="text"] {
@@ -81,8 +95,55 @@ h6 {font-size: 1.1rem;}
 	width: 20%;
 	padding: 0;
 }
+/*stuff for toggle*/
+.search-form {
+    float: left;
+}
+ 
+.search-form input[type="search"] {
+    background-color: transparent;
+    background-image: url(images/search-icon.png);
+    background-position: 5px center;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    border: none;
+    cursor: pointer;
+    height: 37px;
+    margin: 3px 0;
+    padding: 0 0 0 34px;
+    position: relative;
+    -webkit-transition: width 400ms ease, background 400ms ease;
+    transition: width 400ms ease, background 400ms ease;
+    width: 0;
+}
+ 
+.search-form input[type="search"]:focus {
+    background-color: #fff;
+    border: 2px solid #c3c0ab;
+    cursor: text;
+    outline: 0;
+    width: 230px;
+}
+
+.search-form input[type="submit"] { 
+	display:none;
+}
 
 /*--Social Links--*/
+.social-links {
+	float: right;
+	margin: 40px 0;
+}
+
+.social-links-menu {
+	float: right;
+}
+
+.social-navigation {
+	float: right;
+	margin: 40px 0;
+}
+
 .social-navigation ul {
 	list-style: none;
 	margin: 0 0 -0.4375em;
@@ -137,4 +198,10 @@ h6 {font-size: 1.1rem;}
 .post-thumbnail-container {
     padding: 2px;
     margin: 0 10px 10px 0;
+}
+
+@media (min-width: 550px) {
+	.container {
+		width: 100%;
+	}
 }
