@@ -32,6 +32,9 @@ h6 {font-size: 1.1rem;}
 }
 
 /*--- Menu --- */
+.siteinfo a {
+	text-decoration: none;
+}
 
 .siteheader {
 	margin-left: 0;
@@ -98,19 +101,19 @@ h6 {font-size: 1.1rem;}
 /*stuff for toggle*/
 .search-form {
     float: left;
+	margin: 0;
 }
  
 .search-form input[type="search"] {
     background-color: transparent;
     background-image: url(images/search-icon.png);
-    background-position: 5px center;
     background-repeat: no-repeat;
-    background-size: 24px 24px;
+    background-size: 30px 30px;
     border: none;
     cursor: pointer;
-    height: 37px;
-    margin: 3px 0;
-    padding: 0 0 0 34px;
+    height: 31px;
+    margin: 0;
+    padding: 0 0 0 40px;
     position: relative;
     -webkit-transition: width 400ms ease, background 400ms ease;
     transition: width 400ms ease, background 400ms ease;
@@ -119,10 +122,10 @@ h6 {font-size: 1.1rem;}
  
 .search-form input[type="search"]:focus {
     background-color: #fff;
-    border: 2px solid #c3c0ab;
+    border: 1px solid #c3c0ab;
     cursor: text;
     outline: 0;
-    width: 230px;
+    width: 100px;
 }
 
 .search-form input[type="submit"] { 

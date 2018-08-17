@@ -7,9 +7,11 @@
 <body>
     <div class= "container">
         <header class="row">
-            <div class="three columns">
-                <h1><?php bloginfo('name') ?></h1>
-                <p><?php bloginfo('description') ?></p>
+            <div class="three columns siteinfo">
+                <a href="https://allisoncandreva.com/test">
+                    <h1><?php bloginfo('name') ?></h1>
+                    <p><?php bloginfo('description') ?></p>
+                </a>
 			</div>
             <div class="nine columns siteheader">
 				<nav class="sitenav"role="navigation" aria-label="<?php _e( 'Main Menu', 'frank-gathering' ); ?>" >
@@ -23,7 +25,6 @@
 	
 				<?php if ( has_nav_menu( 'social-links' ) ) : ?>
             	<nav class="social-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Social Links', 'frank-gathering' ); ?>">
-                <?php get_search_form(); ?>
 				<?php wp_nav_menu(array(
                         'theme_location' => 'social-links',
                         'depth'          => 1,
@@ -31,6 +32,7 @@
 						'link_before'    => '<span class="screen-reader-text">',
 						'link_after'     => '</span>',                 
 				 ) ); ?>
+                <?php get_search_form(); ?>
                  </nav>
 				<?php endif; ?>
             </div>
