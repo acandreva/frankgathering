@@ -74,17 +74,9 @@ function register_my_menus() {
 }
 add_action( 'init', 'register_my_menus' );
 
-/*----- Add Search Box to Main Menu -----*/
-/*function frank_nav_search($items, $args) {
-    // If this isn't the header menu, do nothing
-    if( !($args->theme_location == 'main-menu') ) 
-    return $items;
-    // Otherwise, add search form
-    return $items . '<li>' . get_search_form(false) . '</li>';
-}
-add_filter('wp_nav_menu_items', 'frank_nav_search', 10, 2);*/
-
+/*-------------- Search Box --------------*/
 add_theme_support('html5', array('search-form'));
+
 
 /*-------------- Enable Post Thumbnails--------------- */
 add_theme_support('post-thumbnails');

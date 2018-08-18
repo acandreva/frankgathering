@@ -6,16 +6,16 @@
 </head>
 <body>
     <div class= "container">
-        <header class="row">
+      <header> 
+        <div class="row siteheader">
             <div class="three columns siteinfo">
                 <a href="https://allisoncandreva.com/test">
                     <h1><?php bloginfo('name') ?></h1>
                     <p><?php bloginfo('description') ?></p>
                 </a>
 			</div>
-            <div class="nine columns siteheader">
-				<nav class="sitenav"role="navigation" aria-label="<?php _e( 'Main Menu', 'frank-gathering' ); ?>" >
-
+            <div class="nine columns sitenav">
+				<nav role="navigation" aria-label="<?php _e( 'Main Menu', 'frank-gathering' ); ?>" >
                 <?php wp_nav_menu(array(
 					'theme_location' => 'main-menu',
 					'depth' => 2, 
@@ -36,18 +36,7 @@
                  </nav>
 				<?php endif; ?>
             </div>
-        </header>
-    <!--<div class="row">
-            <div class="three columns">
-            <p>h1</p>
-            </div>
-            <div class="three columns search-div">
-                        <p>h1</p>
-            </div>
-<!--Search Form --
-            <div class="three columns">
-                <php get_search_form(); ?>
-            </div>
-        </div>
+        </div><!--closes header-container-->
+      </header>
 
 <!--END OF HEADER AREA - BEGIN SECTION CONTENT-->

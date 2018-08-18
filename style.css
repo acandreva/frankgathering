@@ -29,6 +29,25 @@ h6 {font-size: 1.1rem;}
 
 .container {
 	max-width: 1200px;
+	margin-top: 110px;
+}
+
+/*--- Header --- */
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 110px;
+	z-index: 70;
+	width: 100%;
+	padding: 20px 0 0;
+	margin: 0;
+	background-color: #fff;
+}
+
+.siteheader {
+	max-width: 1200px;
+	margin: auto;
 }
 
 /*--- Menu --- */
@@ -36,18 +55,15 @@ h6 {font-size: 1.1rem;}
 	text-decoration: none;
 }
 
-.siteheader {
-	margin-left: 0;
-}
-
 .sitenav {
-	float:left;
+	margin-left: 0;
 }
 
 .main-menu-header {
     text-align: left;
     margin-top: 50px;
     margin-bottom: 30px;
+	float:left;
 }
 
 .main-menu-header ul {
