@@ -21,10 +21,10 @@ get_header(); ?>
 	</div><!--end container div-->
     <div class="full-img-bg">                
         <?php 
-			$image    = get_field( 'image_with_overlay' );
-			$alt      = $image['alt'];
-			$img_src  = $image['sizes']['background-quote-image'];
+			$imageArray  = get_field( 'image_with_overlay' );
+			$imageAlt    = esc_attr($imageArray['alt']);
+			$image       = esc_url($imageArray['sizes']['background-quote-img']);
 		?>
-        <img src="<?php echo $image; ?>" alt="<?php echo $alt; ?>" class="img-full" />
+        <img src="<?php echo $image; ?>" alt="<?php echo $imageAlt; ?>" class="bg-img-full" />
 	</div>
 <?php get_footer(); ?>

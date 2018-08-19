@@ -57,6 +57,12 @@ add_action( 'init', 'register_my_menus' );
 /*-------------- Search Box --------------*/
 add_theme_support('html5', array('search-form'));
 
+/*-------------- Image Sizes --------------*/
+add_action( 'after_setup_theme', 'wpdocs_theme_setup' );
+function wpdocs_theme_setup() {
+	add_image_size( 'background-quote-img', 1200, 500, array( 'center', 'center' ) ); //(cropped)
+}
+
 /*-------------- Enable Post Thumbnails--------------- */
 add_theme_support('post-thumbnails');
 
