@@ -30,6 +30,7 @@ h6 {font-size: 1.1rem;}
 .container {
 	max-width: 1200px;
 	margin-top: 110px;
+	padding: 0 100px;
 }
 
 /*--- Header --- */
@@ -95,26 +96,8 @@ header {
     color: #C54E90;
 }
 
-/*--Search Box Styles--
-.searchform {
-	height: 34px;
-	border: 1px solid #000;
-	width: 100px;
-	margin: 0 15px 0 0;
-	float: left;
-}
-
-.searchform input[type="text"] {
-	width: 75%;
-	height: 30px;
-}
-
-.searchform input[type="submit"] {
-	border: none;
-	width: 20%;
-	padding: 0;
-}
-/*stuff for toggle*/
+/*--Search Box Styles--*/
+/*--Styles for toggle--*/
 .search-form {
     float: left;
 	margin: 0;
@@ -217,6 +200,50 @@ header {
 .post-thumbnail-container {
     padding: 2px;
     margin: 0 10px 10px 0;
+}
+
+/*--Footer--*/
+footer {
+	padding: 20px 0;
+}
+
+.footer-content {
+	max-width: 1200px;
+	margin: auto;
+}
+
+/*--Footer Links--*/
+.menu-footer-menu-container {
+	margin-top: 20px;
+}
+
+footer nav ul {
+    margin: 0; 
+    padding: 0; 
+    list-style-type: none; 
+}
+
+footer nav ul li a {
+	color: #C54E90;
+	text-decoration: none;
+}
+
+footer nav ul li a:hover {
+	color: #f7b518;
+	text-decoration: none;
+}
+/*--End footer link styles--*/
+
+.widget-footer p {
+	margin: 0 0 20px;
+}
+
+.footer-right-content {
+	float: right;
+}
+
+.footer-right-content img {
+	margin-right: 18px;
 }
 
 @media (min-width: 550px) {
