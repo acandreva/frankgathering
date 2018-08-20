@@ -196,10 +196,31 @@ header {
 	content: "\f431";
 }
 
-/*--Front Page--*/
-.post-thumbnail-container {
-    padding: 2px;
-    margin: 0 10px 10px 0;
+/*--Home Page Styles--*/
+.bg-img-full {
+	width: 100%;
+	margin: auto;
+}
+
+.full-img-bg {
+	height: 500px;
+}
+
+.quote {
+	background-color: rgba(255,255,255,0.8);
+	padding: 20px;
+	max-width: 500px;
+	margin: 0 auto;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+}
+
+.quote p {
+	margin: 0;
+	font-size: 18px;
+	line-height: 20px;
 }
 
 /*--Footer--*/
