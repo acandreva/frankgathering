@@ -25,6 +25,38 @@ get_header(); ?>
                 endif; ?>
             </div>
         </div>
+        <div class="row">
+        	<div class="twelve columns">
+	        	<div class="link-boxes">
+                    <a href="#" title="prize" target="_blank">
+                        <div class="tri-box" style="background-image: url(https://allisoncandreva.com/test/wp-content/themes/frank/images/box_bg_imgs_t.png)" ></div>
+                    </a>
+                    <a href="https://www.jou.ufl.edu/cpic/" title="Visit the Center for Public Interest Communications"  target="_blank">
+                        <div class="tri-box" style="background-image: url(https://allisoncandreva.com/test/wp-content/themes/frank/images/box_bg_imgs_t.png)" >
+                        </div>
+                    </a>
+                    <a href="http://changeville.us/" title="Visit changeville's site">
+                        <div class="tri-box-last" style="background-image: url(https://allisoncandreva.com/test/wp-content/themes/frank/images/box_bg_imgs_t.png)" >
+                        </div>
+                    </a>
+                </div>
+        	</div>
+			<!--<div class="four columns tri-box" style="background-image: url(https://allisoncandreva.com/test/wp-content/themes/frank/images/box_bg_imgs_t.png)" >
+                <a href="#" title="prize" target="_blank">
+                	<div class="tri-box-link"></div>
+                </a>
+			</div>
+			<div class="four columns tri-box" style="background-image: url(https://allisoncandreva.com/test/wp-content/themes/frank/images/box_bg_imgs_t.png)" >
+				<a href="https://www.jou.ufl.edu/cpic/" title="Visit the Center for Public Interest Communications"  target="_blank">
+                	<div class="tri-box-link"></div>
+                </a>
+            </div>
+			<div class="four columns tri-box" style="background-image: url(https://allisoncandreva.com/test/wp-content/themes/frank/images/box_bg_imgs_t.png)" >
+				<a href="http://changeville.us/" title="Visit changeville's site">
+                	<div class="tri-box-link"></div>
+                </a>
+            </div>-->
+		</div>
 	</div><!--end container div-->
         <?php 
 			$imageArray  = get_field( 'image_with_overlay' );

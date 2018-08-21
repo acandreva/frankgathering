@@ -197,13 +197,36 @@ header {
 }
 
 /*--Home Page Styles--*/
-.bg-img-full {
-	width: 100%;
-	margin: auto;
+.link-boxes {
+	width: 75%;
+	height: 200px;
+	margin: 50px auto 90px;
+}
+
+.tri-box, .tri-box-last {
+	width: 200px;
+	height: 200px;
+	float: left;
+	margin-right: 50px;
+}
+
+.tri-box-last {
+	margin-right: 0;
+}
+
+.link-boxes a {
+	text-decoration: none;
+}
+
+.tri-box:hover, .tri-box-last:hover {
+	background-position: 0 200px;
 }
 
 .full-img-bg {
 	height: 500px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
 .quote {
