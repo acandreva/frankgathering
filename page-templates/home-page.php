@@ -12,7 +12,7 @@ get_header(); ?>
         </div>
     </div>
     
-    <div class="container">
+    <div class="container home-wrapper">
         <div class="row">
             <div class="twelve columns home-content">
             	<h2 class="join-us-btn"><a href="https://allisoncandreva.com/test/frank-2019/">join us</a></h2>

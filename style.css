@@ -14,8 +14,8 @@ Text Domain: frank_gathering
 
 * {
     color: #000000;
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 .clear {clear: both;}
@@ -30,7 +30,6 @@ h6 {font-size: 1.1rem;}
 .container {
 	max-width: 1200px;
 	margin-top: 60px;
-	padding: 0 100px;
 }
 
 /*--Full Image/Quote--*/
@@ -73,6 +72,14 @@ header {
 	width: 100%;
 	background-color: #fff;
 	border-bottom: 1px solid #73c92d;
+}
+
+.siteinfo h1 {
+	margin-bottom: 0.50em;
+}
+
+.siteinfo p {
+	font-size: 14px;
 }
 
 .siteheader {
@@ -250,7 +257,20 @@ header {
 	transform: translateY(-45%);
 }
 
+.home-title h1 {
+	font-size: 50px;
+	margin: 0 0 2rem;
+}
+
+.home-title h2 {
+	margin: 0;
+}
+
 /*--End Video Background/Overlay Styles--*/
+.home-wrapper {
+	padding: 0 100px;
+}
+
 .home-content h2 {
 	text-align: center;
 }
@@ -297,7 +317,7 @@ header {
 /*--------------------*/
 
 /*------ Tabs ------*/
-.ctu-ulimate-style-1 {
+#event-details .ctu-ulimate-style-1 {
 	border-top: none;
 	margin-top: 0;
 	-webkit-box-pack: center;
@@ -311,16 +331,16 @@ header {
 	box-shadow: none;
 }
 
-.ctu-ulimate-style-1 li {
+#event-details .ctu-ulimate-style-1 li {
 	border-right: 1px solid rgba(115, 201, 45, 1);
 }
 
-.ctu-ulimate-style-1 li.active {
+#event-details .ctu-ulimate-style-1 li.active {
 	color: #C54E90;
 	background-color: #fff;
 }
 
-.ctu-ulitate-style-1-tabs {
+#event-details .ctu-ulitate-style-1-tabs {
 	-webkit-box-shadow: none;
 	-ms-box-shadow: none;
 	-o-box-shadow: none;
@@ -328,6 +348,11 @@ header {
 	box-shadow: none;
 }
 
+#event-details .ctu-ulitate-style-1-tabs p {
+    color: #000;
+    font-family: "Open Sans";
+    margin-bottom: 2.5rem;
+}
 
 /*--------------------*/
 /*------ Footer ------*/
@@ -355,6 +380,7 @@ footer nav ul {
 footer nav ul li a {
 	color: #C54E90;
 	text-decoration: none;
+	font-size: 14px;
 }
 
 footer nav ul li a:hover {
@@ -375,8 +401,24 @@ footer nav ul li a:hover {
 	margin-right: 18px;
 }
 
-@media (min-width: 550px) {
+/*@media (min-width: 550px) {
 	.container {
 		width: 100%;
+	}
+}*/
+
+@media (max-width: 900px) {
+	/*--------------------*/
+	/*--Event Page Styles--*/
+	/*--------------------*/
+
+	/*------ Tabs ------*/
+	#event-details .ctu-ultimate-style-heading-1 {
+		color: #000;
+	}
+	
+	#event-details .ctu-ultimate-style-heading-1.active {
+		color: #C54E90;
+		background-color: #fff;
 	}
 }

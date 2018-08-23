@@ -20,11 +20,10 @@ get_header(); ?>
     
     <div class="container">
         <div class="row">
-            <div class="nine columns">
+            <div id="event-details" class="nine columns">
                 <?php if (have_posts()) : 
                     /* OUR DATA CONTEXT IS DEFINED  */
                     while (have_posts()) : the_post(); ?> 
-                        <h1><?php the_title(); ?></h1>
                         <?php the_content();
                     endwhile;
                 endif; ?>
