@@ -291,6 +291,44 @@ header {
 	background-position: 0 200px;
 }
 
+
+/*--------------------*/
+/*--Event Page Styles--*/
+/*--------------------*/
+
+/*------ Tabs ------*/
+.ctu-ulimate-style-1 {
+	border-top: none;
+	margin-top: 0;
+	-webkit-box-pack: center;
+	-o-flex-pack: center;
+	-moz-flex-pack: center;
+	justify-content: center;
+	-webkit-box-shadow: none;
+	-ms-box-shadow: none;
+	-o-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+.ctu-ulimate-style-1 li {
+	border-right: 1px solid rgba(115, 201, 45, 1);
+}
+
+.ctu-ulimate-style-1 li.active {
+	color: #C54E90;
+	background-color: #fff;
+}
+
+.ctu-ulitate-style-1-tabs {
+	-webkit-box-shadow: none;
+	-ms-box-shadow: none;
+	-o-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+
 /*--------------------*/
 /*------ Footer ------*/
 /*--------------------*/

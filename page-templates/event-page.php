@@ -1,7 +1,7 @@
 <?php 
 /*
  *
- * The default template for pages.
+ * Template Name: Event Page
  *
  */
 get_header(); ?>

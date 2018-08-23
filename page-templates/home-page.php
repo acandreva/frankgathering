@@ -6,7 +6,7 @@
  */
 get_header(); ?>
     <div class="hero">
-        <div class="quote home-title">
+        <div class="home-title">
 	        <h1><?php the_field( 'video_overlay_main' ); ?></h1>
 	        <h2><?php the_field( 'video_overlay_subtext' ); ?></h2>
         </div>
@@ -24,6 +24,7 @@ get_header(); ?>
                 endif; ?>
             </div>
         </div>
+        
         <div class="row">
         	<div class="twelve columns">
 	        	<div class="link-boxes">
@@ -45,6 +46,7 @@ get_header(); ?>
         	</div>
 		</div>
 	</div><!--end container div-->
+    
         <?php 
 			$imageArray  = get_field( 'image_with_overlay' );
 			$imageAlt    = esc_attr($imageArray['alt']);
