@@ -311,6 +311,11 @@ header {
 	letter-spacing: 1px;
 }
 
+.join-us-btn a:hover {
+	background-color: #545151;
+	color: #f7b518;
+}
+
 .link-boxes {
 	width: 75%;
 	height: 200px;
@@ -377,6 +382,27 @@ header {
     color: #000;
     font-family: "Open Sans";
     margin-bottom: 2.5rem;
+}
+/*--end tabs style*/
+.event-btn {
+	float: right;
+}
+.event-btn a {
+	text-decoration: none;
+	background-color: #f7b518;
+	color: #fff;
+	padding: 10px 20px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	font-size: 18px;
+	letter-spacing: 1px;
+	margin-right: 20px;
+	line-height: 5;
+}
+
+.event-btn a:hover {
+	background-color: #545151;
+	color: #f7b518;
 }
 
 /*--------------------*/
