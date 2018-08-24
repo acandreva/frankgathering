@@ -14,8 +14,8 @@ Text Domain: frank_gathering
 
 * {
     color: #000000;
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 14px;
+    line-height: 16px;
 }
 
 .clear {clear: both;}
@@ -30,6 +30,11 @@ h6 {font-size: 1.1rem;}
 .container {
 	max-width: 1200px;
 	margin-top: 60px;
+}
+
+p {
+	font-size: 16px;
+	line-height: 1.5;
 }
 
 /*--Full Image/Quote--*/
@@ -121,6 +126,7 @@ header {
     font-weight: 300;
     font-size: 16px;
 	color: #000;
+	line-height: 16px;
 }
 
 .main-menu-header ul li a:hover {
@@ -130,6 +136,25 @@ header {
 .main-menu-header ul li.current-menu-item a {
 	text-decoration: underline;
     color: #C54E90;
+}
+
+.main-menu-header ul ul {
+	display: none;
+	position: absolute;
+	top: 150px;
+}
+
+.main-menu-header ul ul li {
+	float: none;
+	width: 44px;
+}
+
+.main-menu-header ul ul li a {
+	padding: 5px 10px;
+}
+
+.main-menu-header ul li:hover > ul {
+	display: block;
 }
 
 /*--Search Box Styles--*/
