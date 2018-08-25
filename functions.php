@@ -4,8 +4,6 @@
 
 function add_theme_scripts() {
   wp_enqueue_style( 'style', get_stylesheet_uri() );
-  wp_enqueue_style( 'jquery.sweet-dropdown.min', get_stylesheet_uri() );
-  wp_enqueue_script( 'jquery.sweet-dropdown.min', get_template_directory_uri() . '/js/jquery.sweet-dropdown.min.js', array(), '1.0.0', true );
 }
 add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
 
@@ -63,6 +61,7 @@ add_theme_support('html5', array('search-form'));
 add_action( 'after_setup_theme', 'wpdocs_theme_setup' );
 function wpdocs_theme_setup() {
 	add_image_size( 'background-quote-img', 1200, 500, array( 'center', 'center' ) ); //(cropped)
+	add_image_size( 'speaker-img', 100, 100, array( 'center', 'center' ) ); //(cropped)
 }
 
 /*-------------- Enable Post Thumbnails--------------- */

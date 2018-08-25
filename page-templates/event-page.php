@@ -20,16 +20,13 @@ get_header(); ?>
     
     <div class="container">
         <div class="row">
-            <div id="event-details" class="nine columns">
+            <div id="event-details" class="twelve columns">
                 <?php if (have_posts()) : 
                     /* OUR DATA CONTEXT IS DEFINED  */
                     while (have_posts()) : the_post(); ?> 
                         <?php the_content();
                     endwhile;
                 endif; ?>
-            </div>
-            <div class="three columns">
-                <?php get_sidebar(); ?>
             </div>
         </div>
 	</div><!--end container div-->
