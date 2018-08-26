@@ -1,4 +1,11 @@
-<?php get_header(); ?>
+<?php 
+/*
+ * The template file for a generic single post.
+ *
+ * @link https://codex.wordpress.org/Template_Hierarchy
+*/
+
+get_header(); ?>
     <div class="row">
         <div class="twelve columns">
 <!-- BEGIN SINGLE PHP -->

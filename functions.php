@@ -1,4 +1,40 @@
 <?php
+if ( ! function_exists( 'frank_setup' ) ) :
+/**
+* Sets up frank theme defaults and registers support for various WordPress features
+*
+*
+*  @since frank 1.0
+*/
+function frank_setup() {
+	
+	//Add support for post thumbnails
+	add_theme_support('post-thumbnails');
+
+	//Add support for custom image sizes
+	add_image_size( 'background-quote-img', 1200, 500, array( 'center', 'center' ) ); //(cropped)
+	add_image_size( 'speaker-img', 200, 200, array( 'top', 'center' ) ); //(cropped)
+	
+	//Add support for custom menus
+	register_nav_menus( array(
+		  'main-menu' => __( 'Main Menu' ),
+		  'footer-menu' => __( 'Footer Menu' ),
+		  'social-links' => __( 'Social Links' )
+	));
+}
+
+endif; // frank_setup
+add_action( 'after_setup_theme', 'frank_setup' );
+
+
+add_filter( 'image_size_names_choose', 'frank_img_sizes' );
+ 
+function frank_img_sizes( $sizes ) {
+    return array_merge( $sizes, array(
+        'background-quote-img' => __( 'Background for quote' ),
+        'speaker-img' => __( 'Speaker' ),
+    ) );
+}
 
 /*-------------- Enqueue Styles--------------- */
 
@@ -40,32 +76,8 @@ function blank_widgets_init() {
     }
 add_action('widgets_init', 'blank_widgets_init');
 
-/*-------------- Enable Menu--------------- */
-/*add_theme_support('menus');*/
-
-function register_my_menus() {
-  register_nav_menus(
-    array(
-      'main-menu' => __( 'Main Menu' ),
-      'footer-menu' => __( 'Footer Menu' ),
-      'social-links' => __( 'Social Links' )
-    )
-  );
-}
-add_action( 'init', 'register_my_menus' );
-
 /*-------------- Search Box --------------*/
 add_theme_support('html5', array('search-form'));
-
-/*-------------- Image Sizes --------------*/
-add_action( 'after_setup_theme', 'wpdocs_theme_setup' );
-function wpdocs_theme_setup() {
-	add_image_size( 'background-quote-img', 1200, 500, array( 'center', 'center' ) ); //(cropped)
-	add_image_size( 'speaker-img', 100, 100, array( 'center', 'center' ) ); //(cropped)
-}
-
-/*-------------- Enable Post Thumbnails--------------- */
-add_theme_support('post-thumbnails');
 
 /*-------------- Menu Limit--------------- */
 
