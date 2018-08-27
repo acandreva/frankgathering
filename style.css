@@ -429,6 +429,15 @@ header {
 	color: #f7b518;
 }
 
+/*-- Speaker Content--*/
+.speakerbox {
+	min-height: 390px;
+	padding-bottom: 20px;
+	max-width: 175px;
+	float: left;
+	margin-right: 30px;
+}
+
 /*--------------------*/
 /*------ Footer ------*/
 /*--------------------*/
