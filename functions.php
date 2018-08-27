@@ -92,16 +92,16 @@ if ( $screen->id != 'nav-menus' )
 	$('.submit-add-to-menu').on('click', function(){
 	var num_menu = $('#menu-to-edit').children('.menu-item-depth-0').length;
 	num_menu += $('.menu-item-checkbox:checked').length;
-	if ( !warn && ( num_menu > 7 ) ) {
+	if ( !warn && ( num_menu > 6 ) ) {
 	warn = true;
-	alert('warning: Top level menu Items are limited to 7!');
+	alert('warning: Top level menu Items are limited to 6!');
 	
 	}
 	});
 	$('#update-nav-menu').on('submit', function(){
 	var num_menu = $('#menu-to-edit').children('.menu-item-depth-0').length;
-	if ( num_menu > 7 ) {
-	alert('error: Top level menu Items are limited to 7!');
+	if ( num_menu > 6 ) {
+	alert('error: Top level menu Items are limited to 6!');
 	return false;
 	}
 	});

@@ -1,12 +1,13 @@
 <?php
-/**
-* Plugin Name: Frank Speaker Functionality
-* Version: 0.1
-* License: GPL
-* Author: Allison Logan
-* Author URI: http://allisoncandreva.com/
-* Description: Modifies WP Post Popup plugin to show full post content. 
+/*
+Plugin Name: Frank Speaker Functionality
+Description: This is a customized version of the Custom Post Popup https://gnanavel.wordpress.com/. Use this shortcode to display <strong>[CUSTOM_POST_POPUP type="post" posts_per_page="50" order="ASC"]</strong>
+Version: 1.0
+Author: Allison Logan
+Author URI: http://allisoncandreva.com/
+License: GPLv2 or later
 */
+
 
 Class CustomPostPopup {
 
@@ -95,5 +96,3 @@ Class CustomPostPopup {
 }
 
 $CustomPostPopup = new CustomPostPopup();
- ?>
- 

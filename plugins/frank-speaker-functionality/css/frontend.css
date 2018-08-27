@@ -14,7 +14,7 @@
 .fancybox-opened .fancybox-skin {padding:0px !important;}
 .popupmailtxtcont{line-height: 25px;padding-left: 30px !important;padding-right: 30px !important;padding-bottom: 20px;padding-top: 25px;text-align: justify;font-family: 'Open Sans', sans-serif;font-size: 13px; color: #000;}
 .popuptitlemaincont{background-color:#F5F2F2;}
-.singletestimonialcont{min-height: 390px;padding-bottom: 20px;}
+.speakerbox{min-height: 390px;padding-bottom: 20px;max-width: 175px;float: left;margin-right: 30px;}
 .various{font-size: 13px;}
 .fancyboxcont {padding: 0px;width: 75%;}
 @media(max-width:767px){.testimonialpopupimg {float: none; padding-left: 0px;margin: auto;}.fancybox-opened {width: 85% !important;left: 7% !important;}}
