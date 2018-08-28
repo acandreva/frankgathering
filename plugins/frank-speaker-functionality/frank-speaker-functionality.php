@@ -35,6 +35,7 @@ Class CustomPostPopup {
 		extract( shortcode_atts( array(
 			'posts_per_page' => '50',
 			'order' => 'ASC',
+			'orderby' => 'title',
 			'type'=>'type',		
 		), $atts ) );
 		
@@ -42,6 +43,7 @@ Class CustomPostPopup {
 			'posts_per_page' => (int) $atts['posts_per_page'],
 			'post_type' =>$atts['type'],
 			'order' => $atts['order'],
+			'orderby' => $atts['orderby'],
 			'no_found_rows' => true,
 		);
 		
