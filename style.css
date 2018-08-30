@@ -489,29 +489,30 @@ footer nav ul li a:hover {
 
 /*---Tabs---*/
 #event-tabs {
-  min-width: 320px;
-  max-width: 800px;
-  padding: 50px;
-  margin: 0 auto;
-  background: #fff;
+	min-width: 320px;
+	max-width: 800px;
+	padding: 50px;
+	margin: 0 auto;
+	background: #fff;
 }
 
 #event-tabs section {
-  display: none;
-  padding: 20px 0 0;
+	display: none;
+	padding: 20px 0 0;
 }
 #event-tabs input {
-  display: none;
+	display: none;
 }
 
 #event-tabs label {
-  display: inline-block;
-  margin: 0 0 -1px;
-  padding: 15px 25px;
-  font-weight: 600;
-  text-align: center;
-  color: #bbb;
-  border-right: 1px solid #73c92d;
+	display: inline-block;
+	margin: 0 0 -1px;
+	padding: 15px 25px;
+	font-weight: 600;
+	text-align: center;
+	color: #bbb;
+	border-right: 1px solid #73c92d;
+	width: 25%;
 }
 
 #event-tabs label:nth-child(6) {
@@ -519,14 +520,14 @@ footer nav ul li a:hover {
 }
 
 #event-tabs label:hover, #event-tabs input:checked + label {
-  color: #C54E90;
+	color: #C54E90;
 }
 
 #tab1:checked ~ #content1,
 #tab2:checked ~ #content2,
 #tab3:checked ~ #content3,
 #tab4:checked ~ #content4 {
-  display: block;
+	display: block;
 }
 /*@media (min-width: 550px) {
 	.container {

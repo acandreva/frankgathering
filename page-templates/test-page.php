@@ -19,7 +19,7 @@ get_header(); ?>
 	</div>
     
     <div class="container">
-        <div class="row">
+        <!--<div class="row">
             <div id="event-details" class="twelve columns">
                 <?php if (have_posts()) : 
                     /* OUR DATA CONTEXT IS DEFINED  */
@@ -28,10 +28,10 @@ get_header(); ?>
                     endwhile;
                 endif; ?>
             </div>
-        </div>
+        </div>-->
         <div class="row">
         	<div id="event-tabs" class="twelve columns">
-				<input id="tab1" type="radio" name="tabs" checked>
+				<input id="tab1" type="radio" name="tabs" class="first-tab" checked>
 				<label for="tab1"><em>frank</em> 2019</label>
 
 				<input id="tab2" type="radio" name="tabs">
