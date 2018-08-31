@@ -32,7 +32,7 @@ get_header(); ?>
         <div class="row">
         	<div id="event-tabs" class="twelve columns">
 				<input id="tab1" type="radio" name="tabs" class="first-tab" checked>
-				<label for="tab1"><h1><em>frank</em> 2019 </h1></label>
+				<label for="tab1"><h1><?php the_field( 'event_first_tab' ); ?></h1></label>
 
 				<input id="tab2" type="radio" name="tabs">
 				<label for="tab2"><h1><?php the_field( 'event_second_tab' ); ?></h1></label>
@@ -49,7 +49,7 @@ get_header(); ?>
 					</div>
 					<div class="event-btn">
 						<a href="<?php the_field( 'registration_button_link' ); ?>" target="_blank" rel="noopener">
-							register for <em>frank</em> <?php the_field( 'registration_button_year' ); ?>
+							<?php the_field( 'registration_button_text' ); ?>
 
 						</a>
 					</div>
