@@ -40,7 +40,7 @@ function frank_img_sizes( $sizes ) {
 
 function add_theme_scripts() {
   wp_enqueue_style( 'style', get_stylesheet_uri() );
-  wp_enqueue_script( 'anchorlinks', get_template_directory_uri(), '/js/anchorlinks.js' );
+  wp_enqueue_script( 'franksite', get_template_directory_uri(), '/js/franksite.js' );
 }
 add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
 

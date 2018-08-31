@@ -21,10 +21,10 @@ get_header(); ?>
     <div class="container">
         <!--<div class="row">
             <div id="event-details" class="twelve columns">
-                <?php if (have_posts()) : 
+                <php if (have_posts()) : 
                     /* OUR DATA CONTEXT IS DEFINED  */
                     while (have_posts()) : the_post(); ?> 
-                        <?php the_content();
+                        <php the_content();
                     endwhile;
                 endif; ?>
             </div>
@@ -32,41 +32,49 @@ get_header(); ?>
         <div class="row">
         	<div id="event-tabs" class="twelve columns">
 				<input id="tab1" type="radio" name="tabs" class="first-tab" checked>
-				<label for="tab1"><em>frank</em> 2019</label>
+				<label for="tab1"><h1 id="tab1-title"><em>frank</em> 2019 </h1></label>
 
 				<input id="tab2" type="radio" name="tabs">
-				<label for="tab2">schedule</label>
+				<label for="tab2"><h1><?php the_field( 'event_second_tab' ); ?></h1></label>
 
 				<input id="tab3" type="radio" name="tabs">
-				<label for="tab3">speakers</label>
+				<label for="tab3"><h1><?php the_field( 'event_third_tab' ); ?></h1></label>
 
 				<section id="content1" class="first-tab">
-				<p>
-				  Bacon ipsum dolor sit amet beef venison beef ribs kielbasa. Sausage pig leberkas, t-bone sirloin shoulder bresaola. Frankfurter rump porchetta ham. Pork belly prosciutto brisket meatloaf short ribs.
-				</p>
-				<p>
-				  Brisket meatball turkey short loin boudin leberkas meatloaf chuck andouille pork loin pastrami spare ribs pancetta rump. Frankfurter corned beef beef tenderloin short loin meatloaf swine ground round venison.
-				</p>
+					<?php the_field( 'event_first_tab_content' ); ?>
+					<div class="event-btn">
+						<a href="<?php the_field( 'invite_button_link' ); ?>">
+							<?php the_field( 'invite_button_text' ); ?>
+						</a>
+					</div>
+					<div class="event-btn">
+						<a href="<?php the_field( 'registration_button_link' ); ?>" target="_blank" rel="noopener">
+							register for <em>frank</em> <?php the_field( 'registration_button_year' ); ?>
+
+						</a>
+					</div>
 				</section>
 
 				<section id="content2" class="second-tab">
-				<p>
-				  Bacon ipsum dolor sit amet landjaeger sausage brisket, jerky drumstick fatback boudin ball tip turducken. Pork belly meatball t-bone bresaola tail filet mignon kevin turkey ribeye shank flank doner cow kielbasa shankle. Pig swine chicken hamburger, tenderloin turkey rump ball tip sirloin frankfurter meatloaf boudin brisket ham hock. Hamburger venison brisket tri-tip andouille pork belly ball tip short ribs biltong meatball chuck. Pork chop ribeye tail short ribs, beef hamburger meatball kielbasa rump corned beef porchetta landjaeger flank. Doner rump frankfurter meatball meatloaf, cow kevin pork pork loin venison fatback spare ribs salami beef ribs.
-				</p>
-				<p>
-				  Jerky jowl pork chop tongue, kielbasa shank venison. Capicola shank pig ribeye leberkas filet mignon brisket beef kevin tenderloin porchetta. Capicola fatback venison shank kielbasa, drumstick ribeye landjaeger beef kevin tail meatball pastrami prosciutto pancetta. Tail kevin spare ribs ground round ham ham hock brisket shoulder. Corned beef tri-tip leberkas flank sausage ham hock filet mignon beef ribs pancetta turkey.
-				</p>
+					<?php the_field( 'event_second_tab_content' ); ?>
 				</section>
 
 				<section id="content3" class="third-tab">
-				<p>
-				  Bacon ipsum dolor sit amet beef venison beef ribs kielbasa. Sausage pig leberkas, t-bone sirloin shoulder bresaola. Frankfurter rump porchetta ham. Pork belly prosciutto brisket meatloaf short ribs.
-				</p>
-				<p>
-				  Jerky jowl pork chop tongue, kielbasa shank venison. Capicola shank pig ribeye leberkas filet mignon brisket beef kevin tenderloin porchetta. Capicola fatback venison shank kielbasa, drumstick ribeye landjaeger beef kevin tail meatball pastrami prosciutto pancetta. Tail kevin spare ribs ground round ham ham hock brisket shoulder. Corned beef tri-tip leberkas flank sausage ham hock filet mignon beef ribs pancetta turkey.
-				</p>
+					<?php the_field( 'event_third_tab_content' ); ?>
 				</section>
         	</div>
    		</div>         
 	</div><!--end container div-->
+<script>
+	document.getElementById("tab1-title").onmouseover = function() {mouseOver()};
+	document.getElementById("tab1-title").onmouseout = function() {mouseOut()};
+
+	function mouseOver() {
+		document.getElementById("tab1-title").style.color = "rgb(197, 78, 144)";
+	}
+
+	function mouseOut() {
+		document.getElementById("tab1-title").style.color = "rgb(187, 187, 187)";
+	}
+</script>
 <?php get_footer(); ?>
