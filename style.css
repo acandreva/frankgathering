@@ -12,11 +12,11 @@ Text Domain: frank_gathering
 @import url("css/skeleton.css");
 @import url("css/normalize.css");
 
-* {
+/** {
     color: #000000;
     font-size: 14px;
     line-height: 16px;
-}
+}*/
 
 .clear {clear: both;}
 
@@ -35,6 +35,7 @@ h6 {font-size: 1.1rem;}
 p {
 	font-size: 16px;
 	line-height: 1.5;
+	color: #000;
 }
 
 /*--Full Image/Quote--*/
@@ -81,6 +82,7 @@ header {
 
 .siteinfo h1 {
 	margin-bottom: 0.50em;
+	color: #000;
 }
 
 .siteinfo p {
@@ -248,11 +250,12 @@ header {
 
 .social-navigation a {
 	font-family: FontAwesome;
-	font-size: 2.5em;
+	font-size: 36px;
 	color: #f7b518;
 	display: block;
 	position: relative;
 	width: 35px;
+    line-height: 0;
 }
 
 .social-navigation a:before {
@@ -448,15 +451,11 @@ header {
 	color: #bbb;
 }
 
-#event-tabs label h1 em {
-	color: #bbb;
-}
-
 #event-tabs label:nth-child(6) {
 	border-right: none;
 }
 
-#event-tabs label > h1:hover, #event-tabs input:checked + label h1, #event-tabs input:checked + label em {
+#event-tabs label > h1:hover, #event-tabs input:checked + label h1 {
 	color: #C54E90;
 }
 
@@ -484,14 +483,9 @@ header {
 	line-height: 5;
 }
 
-.event-btn a em {
-	color: #fff;
-	font-size: 18px;
-	line-height: 5;
-}
-
 .event-btn a:hover {
 	background-color: #545151;
+	color: #f7b518;
 }
 
 /*--------------------*/
