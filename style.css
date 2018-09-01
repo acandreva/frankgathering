@@ -145,12 +145,8 @@ header {
     color: #C54E90;
 }
 
-<<<<<<< HEAD
-.main-menu-header .current-menu-item a, .main-menu-header .current_page_item a {
-=======
 .main-menu-header ul li.current-menu-item > a {
 	text-decoration: underline;
->>>>>>> 24b139049f7208ca6c9a4b3b51c036bd387f9bf3
     color: #C54E90;
 }
 
