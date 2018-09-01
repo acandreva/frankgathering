@@ -143,8 +143,7 @@ header {
     color: #C54E90;
 }
 
-.main-menu-header ul li.current-menu-item a {
-	text-decoration: underline;
+.main-menu-header .current-menu-item a, .main-menu-header .current_page_item a {
     color: #C54E90;
 }
 
