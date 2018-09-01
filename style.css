@@ -12,11 +12,11 @@ Text Domain: frank_gathering
 @import url("css/skeleton.css");
 @import url("css/normalize.css");
 
-* {
+/** {
     color: #000000;
     font-size: 14px;
     line-height: 16px;
-}
+}*/
 
 .clear {clear: both;}
 
@@ -35,6 +35,7 @@ h6 {font-size: 1.1rem;}
 p {
 	font-size: 16px;
 	line-height: 1.5;
+	color: #000;
 }
 
 /*--Full Image/Quote--*/
@@ -81,6 +82,7 @@ header {
 
 .siteinfo h1 {
 	margin-bottom: 0.50em;
+	color: #000;
 }
 
 .siteinfo p {
@@ -143,7 +145,12 @@ header {
     color: #C54E90;
 }
 
+<<<<<<< HEAD
 .main-menu-header .current-menu-item a, .main-menu-header .current_page_item a {
+=======
+.main-menu-header ul li.current-menu-item > a {
+	text-decoration: underline;
+>>>>>>> 24b139049f7208ca6c9a4b3b51c036bd387f9bf3
     color: #C54E90;
 }
 
@@ -247,11 +254,12 @@ header {
 
 .social-navigation a {
 	font-family: FontAwesome;
-	font-size: 2.5em;
+	font-size: 36px;
 	color: #f7b518;
 	display: block;
 	position: relative;
 	width: 35px;
+    line-height: 0;
 }
 
 .social-navigation a:before {
@@ -376,7 +384,7 @@ header {
 /*--Event Page Styles--*/
 /*--------------------*/
 
-/*------ Tabs ------*/
+/*------ old Tabs ------*/
 #event-details .ctu-ulimate-style-1 {
 	border-top: none;
 	margin-top: 0;
@@ -414,6 +422,52 @@ header {
     color: #000;
     font-family: "Open Sans";
     margin-bottom: 2.5rem;
+}
+
+/*------ Tabs ------*/
+#event-tabs {
+	min-width: 320px;
+	max-width: 1030px;
+	padding: 50px;
+	margin: 0 auto;
+	background: #fff;
+}
+
+#event-tabs section {
+	display: none;
+	padding: 20px 0 0;
+}
+#event-tabs input {
+	display: none;
+}
+
+#event-tabs label {
+	display: inline-block;
+	border-right: 1px solid #73c92d;
+	width: 32%;
+}
+
+#event-tabs label h1 {
+	margin: 0 0 -1px;
+	padding: 5px 25px;
+	font-weight: 600;
+	text-align: center;
+	color: #bbb;
+}
+
+#event-tabs label:nth-child(6) {
+	border-right: none;
+}
+
+#event-tabs label > h1:hover, #event-tabs input:checked + label h1 {
+	color: #C54E90;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4 {
+	display: block;
 }
 /*--end tabs style*/
 .event-btn {
