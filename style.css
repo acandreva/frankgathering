@@ -18,6 +18,10 @@ Text Domain: frank_gathering
     line-height: 16px;
 }*/
 
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
 .clear {clear: both;}
 
 h1 {font-size: 3.0rem;}
@@ -446,7 +450,8 @@ header {
 #event-tabs label h1 {
 	margin: 0 0 -1px;
 	padding: 5px 25px;
-	font-weight: 600;
+	font-weight: 300;
+	font-size: 25px;
 	text-align: center;
 	color: #bbb;
 }
@@ -465,7 +470,12 @@ header {
 #tab4:checked ~ #content4 {
 	display: block;
 }
+
+#event-tabs h2 {
+	font-size: 22px;
+}
 /*--end tabs style*/
+
 .event-btn {
 	float: left;
 }
