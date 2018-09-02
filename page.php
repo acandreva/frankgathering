@@ -30,7 +30,7 @@ get_header(); ?>
                 endif; ?>
             </div>
             <div class="three columns">
-                <?php get_sidebar(); ?>
+				<?php wpb_childpages(); ?>
             </div>
         </div>
 	</div><!--end container div-->

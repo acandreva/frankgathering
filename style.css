@@ -50,7 +50,7 @@ p {
 	background-size: cover;
 }
 
-.quote {
+.quote, .speaker-pg-title {
 	background-color: rgba(255,255,255,0.8);
 	-webkit-border-radius: 10px;
 	border-radius: 10px;
@@ -384,46 +384,6 @@ header {
 /*--Event Page Styles--*/
 /*--------------------*/
 
-/*------ old Tabs ------*/
-#event-details .ctu-ulimate-style-1 {
-	border-top: none;
-	margin-top: 0;
-	-webkit-box-pack: center;
-	-o-flex-pack: center;
-	-moz-flex-pack: center;
-	justify-content: center;
-	-webkit-box-shadow: none;
-	-ms-box-shadow: none;
-	-o-box-shadow: none;
-	-moz-box-shadow: none;
-	box-shadow: none;
-}
-
-#event-details .ctu-ulimate-style-1 li {
-	border-right: 1px solid rgba(115, 201, 45, 1);
-}
-
-#event-details .ctu-ulimate-style-1 li.active {
-	color: #C54E90;
-	background-color: #fff;
-}
-
-#event-details .ctu-ulitate-style-1-tabs {
-	-webkit-box-shadow: none;
-	-ms-box-shadow: none;
-	-o-box-shadow: none;
-	-moz-box-shadow: none;
-	box-shadow: none;
-	padding: 0 0 0 20px;
-	width: 95%;
-}
-
-#event-details .ctu-ulitate-style-1-tabs p {
-    color: #000;
-    font-family: "Open Sans";
-    margin-bottom: 2.5rem;
-}
-
 /*------ Tabs ------*/
 #event-tabs {
 	min-width: 320px;
@@ -496,6 +456,26 @@ header {
 .event-btn a:hover {
 	background-color: #545151;
 	color: #f7b518;
+}
+
+/*--------------------*/
+/*----Post Styles-----*/
+/*--------------------*/
+
+/*--- Speaker Posts --*/
+.speaker-posts img {
+	float: left;
+	padding: 0 25px 10px 0;
+}
+
+.speaker-pg-title h1 {
+	text-align: center;
+}
+
+/*--- 404 --*/
+.error-pg img {
+	max-width: 100%;
+	height: auto;
 }
 
 /*--------------------*/
