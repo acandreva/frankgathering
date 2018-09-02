@@ -92,8 +92,6 @@ function wpb_list_child_pages() {
 }
  
 add_shortcode('wpb_childpages', 'wpb_list_child_pages');
-add_filter('widget_text', 'do_shortcode');
-
 
 /*-------------- Search Box --------------*/
 add_theme_support('html5', array('search-form'));

@@ -20,6 +20,9 @@ get_header(); ?>
     
     <div class="container">
         <div class="row">
+            <div class="three columns page-nav">
+				<?php echo do_shortcode( '[wpb_childpages]' );?>
+            </div>
             <div class="nine columns">
                 <?php if (have_posts()) : 
                     /* OUR DATA CONTEXT IS DEFINED  */
@@ -28,9 +31,6 @@ get_header(); ?>
                         <?php the_content();
                     endwhile;
                 endif; ?>
-            </div>
-            <div class="three columns">
-				<?php wpb_childpages(); ?>
             </div>
         </div>
 	</div><!--end container div-->

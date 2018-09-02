@@ -42,6 +42,11 @@ p {
 	color: #000;
 }
 
+.container ul {
+	margin-left: 30px;
+	list-style-type: square;
+}
+
 /*--Full Image/Quote--*/
 .full-img-bg {
 	height: 500px;
@@ -145,7 +150,7 @@ header {
 	padding: 0 15px;
 }
 
-.main-menu-header ul li a:hover {
+.main-menu-header ul li a:hover, .page-nav ul li a:hover {
     color: #C54E90;
 }
 
@@ -330,6 +335,7 @@ header {
 }
 
 /*--End Video Background/Overlay Styles--*/
+
 .home-wrapper {
 	padding: 0 100px;
 }
@@ -458,9 +464,9 @@ header {
 	color: #f7b518;
 }
 
-/*--------------------*/
-/*----Post Styles-----*/
-/*--------------------*/
+/*----------------------*/
+/*-----Post Styles------*/
+/*----------------------*/
 
 /*--- Speaker Posts --*/
 .speaker-posts img {
@@ -470,6 +476,41 @@ header {
 
 .speaker-pg-title h1 {
 	text-align: center;
+}
+
+/*----------------------*/
+/*-Miscellaneous Styles-*/
+/*----------------------*/
+
+.page-nav ul {
+	list-style: none;
+}
+
+.page-nav ul li a {
+    text-decoration: none;  
+    font-weight: 300;
+    font-size: 16px;
+	color: #000;
+	line-height: 30px;
+}
+
+/*--- Accordions ---*/
+.accordions-themes.flat {
+	margin-bottom: 20px;
+}
+
+.accordions .accordions-head {
+	outline: none;
+}
+
+.ui-state-default, .ui-state-active, .ui-state-focus {
+	border: none;
+}
+
+.ui-widget-content {
+	border-top: none;
+	border-right: none;
+	border-left: none;
 }
 
 /*--- 404 --*/
