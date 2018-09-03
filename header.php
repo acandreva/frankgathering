@@ -6,6 +6,18 @@
 </head>
 <body>
     <header> 
+        <div class="fat-nav">
+            <div class="fat-nav__wrapper">
+            <a href="javascript:void(0)" class="hamburger"><div class="hamburger__icon"></div></a>
+            	 <nav role="navigation" aria-label="<?php _e( 'Main Menu', 'frank-gathering' ); ?>" >
+              <?php wp_nav_menu(array(
+                  'theme_location' => 'main-menu',
+                  'depth' => 2, 
+                  'container_class' => 'main-menu-header'
+              )); ?>
+              </nav>
+            </div>
+        </div>
       <div class="row siteheader">
           <div class="three columns siteinfo">
               <a href="https://allisoncandreva.com/test">

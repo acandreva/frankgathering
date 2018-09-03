@@ -47,6 +47,16 @@ p {
 	list-style-type: square;
 }
 
+a {
+	text-decoration: none;
+	color: #C54E90;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #C54E90;
+}
+
 /*--Full Image/Quote--*/
 .full-img-bg {
 	height: 500px;
@@ -571,6 +581,16 @@ footer nav ul li a:hover {
 		width: 100%;
 	}
 }*/
+
+.fat-nav {
+		display: none;
+	}
+	
+@media (max-width: 815px) {
+	.fat-nav {
+		display: none;
+	}
+}
 
 @media (max-width: 900px) {
 	/*--------------------*/
