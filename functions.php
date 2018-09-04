@@ -39,9 +39,8 @@ function frank_img_sizes( $sizes ) {
 /*-------------- Enqueue Styles--------------- */
 
 function add_theme_scripts() {
-  wp_enqueue_style( 'style', get_stylesheet_uri() );
-  wp_enqueue_style( 'jquery.fatNav.min', get_stylesheet_uri(), '/css/jquery.fatNav.min.css' );
-  wp_enqueue_script( 'jquery.fatNav.min', get_template_directory_uri(), '/js/jquery.fatNav.min.js' );
+	wp_enqueue_style( 'style', get_stylesheet_uri() );
+	wp_enqueue_script( 'burger-menu-script', get_stylesheet_directory_uri() . '/js/burger-menu.js', array( 'jquery' ) );
 }
 add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
 

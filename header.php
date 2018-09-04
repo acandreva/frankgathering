@@ -6,18 +6,6 @@
 </head>
 <body>
     <header> 
-        <div class="fat-nav">
-            <div class="fat-nav__wrapper">
-            <a href="javascript:void(0)" class="hamburger"><div class="hamburger__icon"></div></a>
-            	 <nav role="navigation" aria-label="<?php _e( 'Main Menu', 'frank-gathering' ); ?>" >
-              <?php wp_nav_menu(array(
-                  'theme_location' => 'main-menu',
-                  'depth' => 2, 
-                  'container_class' => 'main-menu-header'
-              )); ?>
-              </nav>
-            </div>
-        </div>
       <div class="row siteheader">
           <div class="three columns siteinfo">
               <a href="https://allisoncandreva.com/test">
@@ -33,7 +21,7 @@
                   'container_class' => 'main-menu-header'
               )); ?>
               </nav>
-  
+				<a class="toggle-nav" href="#">&#9776;</a>
               <?php if ( has_nav_menu( 'social-links' ) ) : ?>
               <nav class="social-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Social Links', 'frank-gathering' ); ?>">
               <?php wp_nav_menu(array(
@@ -48,5 +36,34 @@
               <?php endif; ?>
           </div>
       </div><!--closes siteheader-->
+	  <div class="mobile-siteheader">
+		<div class="mobile-siteinfo">
+              <a href="https://allisoncandreva.com/test">
+                  <h1><?php bloginfo('name') ?></h1>
+                  <p><?php bloginfo('description') ?></p>
+              </a>
+        </div>
+		<div class="mobile-sitenav">
+              <nav role="navigation" aria-label="<?php _e( 'Main Menu', 'frank-gathering' ); ?>" >
+              <?php wp_nav_menu(array(
+                  'theme_location' => 'main-menu',
+                  'depth' => 1, 
+                  'container_class' => 'main-menu-header'
+              )); ?>
+              </nav>
+              <?php if ( has_nav_menu( 'social-links' ) ) : ?>
+              <nav class="social-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Social Links', 'frank-gathering' ); ?>">
+              <?php wp_nav_menu(array(
+                      'theme_location' => 'social-links',
+                      'depth'          => 1,
+                      'container_class'     => 'social-links-menu',
+                      'link_before'    => '<span class="screen-reader-text">',
+                      'link_after'     => '</span>',                 
+               ) ); ?>
+               </nav>
+              <?php endif; ?>
+              <a class="toggle-nav" href="#">&#9776;</a>
+        </div>
+      </div><!--closes mobile-siteheader-->
     </header>
 <!--END OF HEADER AREA - BEGIN SECTION CONTENT-->

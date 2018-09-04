@@ -111,6 +111,7 @@ header {
 .siteheader {
 	max-width: 1200px;
 	margin: auto;
+	display: block;
 }
 
 /*--- Menu --- */
@@ -207,6 +208,10 @@ header {
 	border-left:7px solid transparent;
 	border-right:7px solid transparent;
 	border-bottom:7px solid #73c92d; /*#303030;*/
+}
+
+.toggle-nav, .mobile-siteheader {
+    display: none !important;
 }
 
 /*--Search Box Styles--*/
@@ -582,13 +587,57 @@ footer nav ul li a:hover {
 	}
 }*/
 
-.fat-nav {
+
+@media (max-width: 815px) {
+	.siteheader {
 		display: none;
 	}
 	
-@media (max-width: 815px) {
-	.fat-nav {
+	.mobile-siteheader {
+		display: inline-block !important;
+	}
+	
+	.mobile-siteinfo {
+		float: left;
+		margin-left: 20px;
+	}
+	
+	.mobile-siteinfo h1 {
+		margin-bottom: 0.50em;
+		color: #000;
+	}
+	
+	.toggle-nav {
+		padding: 15px;
+		margin: 15px;
+		display: inline-block !important;
+		color: #C54E90;
+		transition: color linear 0.15s;
+		font-size: 40px;
+	}
+	
+	.toggle-nav:hover, .toggle-nav.active {
+		text-decoration: none;
+		color: #000;
+	} 
+	
+	.mobile-sitenav {
+		display: inline-block;
+		position: relative;
+	}
+	
+	.mobile-sitenav ul {
 		display: none;
+		position: absolute;
+		top: 80%;
+		left: 0px;
+		padding-left: 15px;
+		background: #fff;
+	}
+	
+	.mobile-sitenav li {
+		display: block;
+		float: none;
 	}
 }
 
