@@ -20,7 +20,8 @@ function frank_setup() {
 		  'main-menu' => __( 'Main Menu' ),
 		  'footer-menu' => __( 'Footer Menu' ),
 		  'social-links' => __( 'Social Links' ),
-		  'mobile-menu' => __( 'Mobile Menu' )
+		  'mobile-menu' => __( 'Mobile Menu' ),
+		  'event-menu' => __( 'Event Menu' )
 	));
 }
 

@@ -20,7 +20,16 @@ get_header(); ?>
     
     <div class="container">
         <div class="row">
-        	<div id="event-tabs" class="twelve columns">
+            <div class="two columns page-nav">
+                <nav role="navigation" aria-label="<?php _e( 'Event Menu', 'frank-gathering' ); ?>" >
+                <?php wp_nav_menu(array(
+                  'theme_location' => 'event-menu',
+                  'depth' => 1, 
+                  'container_class' => 'event-side-menu'
+                )); ?>
+                </nav>            
+            </div>
+        	<div id="event-tabs" class="ten columns">
 				<input id="tab1" type="radio" name="tabs" class="first-tab" checked>
 				<label for="tab1"><h1><?php the_field( 'event_first_tab' ); ?></h1></label>
 
