@@ -595,6 +595,7 @@ footer nav ul li a:hover {
 	
 	.mobile-siteheader {
 		display: inline-block !important;
+		width: 100%;
 	}
 	
 	.mobile-siteinfo {
@@ -603,8 +604,16 @@ footer nav ul li a:hover {
 	}
 	
 	.mobile-siteinfo h1 {
-		margin-bottom: 0.50em;
+		margin-bottom: 0.20em;
 		color: #000;
+	}
+	
+	.mobile-siteinfo p {
+		font-size: 14px;
+	}
+	
+	.mobile-siteinfo a, .mobile-siteinfo a:hover {
+		text-decoration: none;
 	}
 	
 	.toggle-nav {
@@ -624,20 +633,50 @@ footer nav ul li a:hover {
 	.mobile-sitenav {
 		display: inline-block;
 		position: relative;
+		float: right;
 	}
 	
 	.mobile-sitenav ul {
 		display: none;
 		position: absolute;
-		top: 80%;
-		left: 0px;
-		padding-left: 15px;
+		top: 89%;
+		right: 0px;
+		padding-right: 33px;
 		background: #fff;
+		border-left: .25px solid #73c92d;
+		border-bottom: .25px solid #73c92d;
+		text-align: right;
 	}
 	
 	.mobile-sitenav li {
 		display: block;
 		float: none;
+		width: 130px;
+	}
+	
+	.mobile-sitenav li a {
+		color: #000;
+	}
+	
+	.mobile-sitenav li a:hover {
+		text-decoration: none;
+		color: #C54E90;
+	}
+	
+	.mobile-sitenav .social-navigation {
+		margin: 0;
+	}
+
+	.mobile-sitenav .social-navigation li {
+		width: 29px;
+		float: left;
+	}
+	
+	.mobile-sitenav .social-navigation a {
+		font-size: 25px;
+		color: #f7b518;
+		width: 10px;
+		float: right;
 	}
 }
 

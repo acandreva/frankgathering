@@ -19,7 +19,8 @@ function frank_setup() {
 	register_nav_menus( array(
 		  'main-menu' => __( 'Main Menu' ),
 		  'footer-menu' => __( 'Footer Menu' ),
-		  'social-links' => __( 'Social Links' )
+		  'social-links' => __( 'Social Links' ),
+		  'mobile-menu' => __( 'Mobile Menu' )
 	));
 }
 
