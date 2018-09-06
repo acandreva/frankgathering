@@ -534,6 +534,39 @@ header {
 	height: auto;
 }
 
+/*--- Contact Form --*/
+
+.wpcf7 label {
+	font-weight: 100px;
+}
+
+.wpcf7 input[type="email"], .wpcf7 input[type="text"] {
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	border-bottom: solid .5px #73c92d;
+	border-radius: 0;
+	height: 35px;
+}
+
+.wpcf7 textarea {
+	border: solid .5px #73c92d;
+	border-radius: 0;
+}
+
+.wpcf7 input[type="submit"] {
+	background-color: #f7b518;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 10px;
+	font-size: 18px;
+	letter-spacing: 1px;
+	line-height: 5px;
+	font-weight: 100;
+	border: none;
+	text-transform: none;
+}
+
 /*--------------------*/
 /*------ Footer ------*/
 /*--------------------*/
