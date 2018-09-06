@@ -14,7 +14,7 @@
                   <p><?php bloginfo('description') ?></p>
               </a>
           </div>
-          <div class="nine columns sitenav">
+          <div class="six columns sitenav">
               <nav role="navigation" aria-label="<?php _e( 'Main Menu', 'frank-gathering' ); ?>" >
               <?php wp_nav_menu(array(
                   'theme_location' => 'main-menu',
@@ -22,8 +22,9 @@
                   'container_class' => 'main-menu-header'
               )); ?>
               </nav>
-				<a class="toggle-nav" href="#">&#9776;</a>
-              <?php if ( has_nav_menu( 'social-links' ) ) : ?>
+		  </div>
+          <div class="three columns sitenav">
+			  <?php if ( has_nav_menu( 'social-links' ) ) : ?>
               <nav class="social-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Social Links', 'frank-gathering' ); ?>">
               <?php wp_nav_menu(array(
                       'theme_location' => 'social-links',
