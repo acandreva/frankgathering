@@ -23,17 +23,16 @@
               )); ?>
               </nav>
 		  </div>
-          <div class="three columns sitenav">
+          <div class="three columns socialnav">
 			  <?php if ( has_nav_menu( 'social-links' ) ) : ?>
               <nav class="social-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Social Links', 'frank-gathering' ); ?>">
-              <?php wp_nav_menu(array(
-                      'theme_location' => 'social-links',
-                      'depth'          => 1,
-                      'container_class'     => 'social-links-menu',
-                      'link_before'    => '<span class="screen-reader-text">',
-                      'link_after'     => '</span>',                 
-               ) ); ?>
-              <?php get_search_form(); ?>
+				  <?php wp_nav_menu(array(
+                          'theme_location' => 'social-links',
+                          'depth'          => 1,
+                          'container_class'     => 'social-links-menu',
+                          'link_before'    => '<span class="screen-reader-text">',
+                          'link_after'     => '</span>',                 
+                   ) ); ?>
                </nav>
               <?php endif; ?>
           </div>

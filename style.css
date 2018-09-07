@@ -119,10 +119,6 @@ header {
 	text-decoration: none;
 }
 
-.sitenav {
-	margin-left: 0;
-}
-
 .main-menu-header {
     margin-top: 50px;
     margin-bottom: 30px;
@@ -211,40 +207,6 @@ header {
 
 .toggle-nav, .mobile-siteheader {
     display: none !important;
-}
-
-/*--Search Box Styles--*/
-.search-form {
-    float: left;
-	margin: 0;
-}
- 
-.search-form input[type="search"] {
-    background-color: transparent;
-    background-image: url(images/search-icon.png);
-    background-repeat: no-repeat;
-    background-size: 30px 30px;
-    border: none;
-    cursor: pointer;
-    height: 31px;
-    margin: 0;
-    padding: 0 0 0 40px;
-    position: relative;
-    -webkit-transition: width 400ms ease, background 400ms ease;
-    transition: width 400ms ease, background 400ms ease;
-    width: 0;
-}
- 
-.search-form input[type="search"]:focus {
-    background-color: #fff;
-    border: 1px solid #c3c0ab;
-    cursor: text;
-    outline: 0;
-    width: 100px;
-}
-
-.search-form input[type="submit"] { 
-	display:none;
 }
 
 /*--Social Links--*/
