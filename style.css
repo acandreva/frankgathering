@@ -581,8 +581,23 @@ footer nav ul li a:hover {
 	}
 }*/
 
+@media (max-width: 900px) {
+	/*--------------------*/
+	/*--Event Page Styles--*/
+	/*--------------------*/
 
-@media (max-width: 815px) {
+	/*------ Tabs ------*/
+	#event-details .ctu-ultimate-style-heading-1 {
+		color: #000;
+	}
+	
+	#event-details .ctu-ultimate-style-heading-1.active {
+		color: #C54E90;
+		background-color: #fff;
+	}
+}
+
+@media (max-width: 1035px) {
 	.siteheader {
 		display: none;
 	}
@@ -674,18 +689,36 @@ footer nav ul li a:hover {
 	}
 }
 
-@media (max-width: 900px) {
-	/*--------------------*/
-	/*--Event Page Styles--*/
-	/*--------------------*/
-
-	/*------ Tabs ------*/
-	#event-details .ctu-ultimate-style-heading-1 {
-		color: #000;
+@media (max-width: 1090px) {
+	.seven.columns.sitenav {
+		margin-left: 0;
+		width: 60%;
 	}
 	
-	#event-details .ctu-ultimate-style-heading-1.active {
-		color: #C54E90;
-		background-color: #fff;
+	.container {
+		width: 90%;
+	}
+	
+	#event-tabs {
+		
+	}
+}
+
+@media (max-width: 1129px) {
+	.two.columns.socialnav {
+		margin-left: 2%;
+		width: 15%;
+	}
+}
+
+@media (max-width: 1194px) {
+	.container {
+		width: 90%;
+	}
+}
+
+@media (max-width: 1284px) {
+	.siteheader {
+		padding: 0 40px;
 	}
 }
