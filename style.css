@@ -539,6 +539,7 @@ header {
 /*--------------------*/
 footer {
 	padding: 20px 0;
+	border-top: .25px solid #73c92d;
 }
 
 .footer-content {
@@ -658,6 +659,29 @@ footer nav ul li a:hover {
 		color: #C54E90;
 	}
 	
+}
+
+@media (max-width: 815px) {
+	.six.columns.footer-left, .six.columns.footer-right {
+		width: 100%;
+		margin: 0;
+		text-align: center;
+	}
+	
+	.footer-right-content {
+		float: none;
+	}
+	
+	.menu-footer-menu-container {
+		margin-top: 0;
+	}
+	
+	footer nav ul {
+		line-height: 1;
+		margin: 0 0 10px;
+		padding: 0 0 10px;
+		border-bottom: .25px solid #73c92d;
+	}
 }
 
 @media (max-width: 900px) {
@@ -791,5 +815,9 @@ footer nav ul li a:hover {
 @media (max-width: 1284px) {
 	.siteheader {
 		padding: 0 40px;
+	}
+	
+	.footer-content {
+		padding: 20px 40px;
 	}
 }
