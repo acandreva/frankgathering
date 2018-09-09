@@ -23,6 +23,10 @@ get_header(); ?>
             <div class="three columns page-nav">
 				<?php echo do_shortcode( '[wpb_childpages]' );?>
             </div>
+            <div class="three columns mobile-page-nav">
+              	<h1><a class="toggle-page-nav" href="#">menu</a></h1>
+				<?php echo do_shortcode( '[wpb_childpages]' );?>
+            </div>
             <div class="nine columns">
                 <?php if (have_posts()) : 
                     /* OUR DATA CONTEXT IS DEFINED  */

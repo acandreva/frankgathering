@@ -6,3 +6,12 @@ jQuery(document).ready(function() {
     });
     
 });
+
+jQuery(document).ready(function() {
+    jQuery('.toggle-page-nav').click(function(e) {
+        jQuery('.mobile-page-nav ul').slideToggle(500);
+ 
+        e.preventDefault();
+    });
+    
+});

@@ -29,6 +29,16 @@ get_header(); ?>
                 )); ?>
                 </nav>            
             </div>
+            <div class="three columns mobile-page-nav">
+              	<h1><a class="toggle-page-nav" href="#">menu</a></h1>
+                <nav role="navigation" aria-label="<?php _e( 'Event Menu', 'frank-gathering' ); ?>" >
+                    <?php wp_nav_menu(array(
+                      'theme_location' => 'event-menu',
+                      'depth' => 1, 
+                      'container_class' => 'mobile-event-side-menu'
+                    )); ?>
+                </nav> 
+			</div>            
         	<div id="event-tabs" class="ten columns">
 				<input id="tab1" type="radio" name="tabs" class="first-tab" checked>
 				<label for="tab1"><h1><?php the_field( 'event_first_tab' ); ?></h1></label>
