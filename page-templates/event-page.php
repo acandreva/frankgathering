@@ -51,16 +51,18 @@ get_header(); ?>
 
 				<section id="content1" class="first-tab">
 					<?php the_field( 'event_first_tab_content' ); ?>
-					<div class="event-btn">
-						<a href="<?php the_field( 'invite_button_link' ); ?>">
-							<?php the_field( 'invite_button_text' ); ?>
-						</a>
-					</div>
-					<div class="event-btn">
-						<a href="<?php the_field( 'registration_button_link' ); ?>" target="_blank" rel="noopener">
-							<?php the_field( 'registration_button_text' ); ?>
-
-						</a>
+                    <div class="event-btns">
+                        <div class="event-btn">
+                            <a href="<?php the_field( 'invite_button_link' ); ?>">
+                                <?php the_field( 'invite_button_text' ); ?>
+                            </a>
+                        </div>
+                        <div class="event-btn">
+                            <a href="<?php the_field( 'registration_button_link' ); ?>" target="_blank" rel="noopener">
+                                <?php the_field( 'registration_button_text' ); ?>
+    
+                            </a>
+                        </div>
 					</div>
 				</section>
 

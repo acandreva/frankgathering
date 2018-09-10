@@ -26,25 +26,23 @@ get_header(); ?>
         </div>
         
         <div class="row">
-        	<div class="twelve columns">
-	        	<div class="link-boxes">
-                    <a href="#" title="prize" target="_blank">
-                        <div class="tri-box" style="background-image: url(https://allisoncandreva.com/test/wp-content/themes/frank/images/box_bg_imgs_t.png)" >    	
-                        <span role="img" aria-label="An image of buttons from frank 2016"> </span>
-						</div>
-                    </a>
-                    <a href="https://www.jou.ufl.edu/cpic/" title="Visit the Center for Public Interest Communications"  target="_blank">
-                        <div class="tri-box" style="background-image: url(https://allisoncandreva.com/test/wp-content/themes/frank/images/box_bg_imgs_t.png)"                         <span role="img" aria-label="An image of buttons from frank 2016"> </span>
-                        </div>
-                    </a>
-                    <a href="http://changeville.us/" title="Visit changeville's site">
-                        <div class="tri-box-last" style="background-image: url(https://allisoncandreva.com/test/wp-content/themes/frank/images/box_bg_imgs_t.png)" >
-                        <span role="img" aria-label="An image of buttons from frank 2016"> </span>
-                        </div>
-                    </a>
-                </div>
-        	</div>
-		</div>
+            <div class="twelve columns link-boxes">
+                <a href="#" title="prize" target="_blank">
+                    <div class="tri-box" style="background-image: url(https://allisoncandreva.com/test/wp-content/themes/frank/images/box_bg_imgs_t.png)" >    	
+                    <span role="img" aria-label="An image of buttons from frank 2016"> </span>
+                    </div>
+                </a>
+                <a href="https://www.jou.ufl.edu/cpic/" title="Visit the Center for Public Interest Communications"  target="_blank">
+                    <div class="tri-box" style="background-image: url(https://allisoncandreva.com/test/wp-content/themes/frank/images/box_bg_imgs_t.png)"                         <span role="img" aria-label="An image of buttons from frank 2016"> </span>
+                    </div>
+                </a>
+                <a href="http://changeville.us/" title="Visit changeville's site">
+                    <div class="tri-box" style="background-image: url(https://allisoncandreva.com/test/wp-content/themes/frank/images/box_bg_imgs_t.png)" >
+                    <span role="img" aria-label="An image of buttons from frank 2016"> </span>
+                    </div>
+                </a>
+            </div>
+        </div>
 	</div><!--end container div-->
     
         <?php 
@@ -54,7 +52,7 @@ get_header(); ?>
 		?>
     <div class="full-img-bg" style="background-image: url(<?php echo $image; ?>">
     	<span role="img" aria-label="<?php echo $imageAlt; ?>"> </span>
-		<div class="quote">
+		<div class="quote-home">
 	        <?php the_field( 'text_overlay' ); ?>
         </div>
 	</div>

@@ -65,7 +65,7 @@ a:hover {
 	background-size: cover;
 }
 
-.quote, .speaker-pg-title {
+.quote, .speaker-pg-title, .quote-home {
 	background-color: rgba(255,255,255,0.8);
 	-webkit-border-radius: 10px;
 	border-radius: 10px;
@@ -73,12 +73,18 @@ a:hover {
 	max-width: 500px;
 	margin: 0 auto;
 	position: relative;
+	top: 57%;
+	-webkit-transform: translateY(-43%);
+	transform: translateY(-43%);
+}
+
+.quote-home {
 	top: 50%;
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
 }
 
-.quote p {
+.quote p, .quote-home p {
 	margin: 0;
 	font-size: 18px;
 	line-height: 20px;
@@ -171,6 +177,7 @@ header {
 	top: 30px;
 	background-color: #fff;
 	border: .25px solid #73c92d;
+	width: auto;
 }
 
 .main-menu-header ul ul li {
@@ -337,27 +344,22 @@ header {
 }
 
 .link-boxes {
-	width: 75%;
-	height: 200px;
 	margin: 50px auto 90px;
+	display: flex;                  /* establish flex container */
+	flex-direction: row;
+	justify-content: space-between; /* switched from default */
 }
 
-.tri-box, .tri-box-last {
+.tri-box {
 	width: 200px;
 	height: 200px;
-	float: left;
-	margin-right: 50px;
-}
-
-.tri-box-last {
-	margin-right: 0;
 }
 
 .link-boxes a {
 	text-decoration: none;
 }
 
-.tri-box:hover, .tri-box-last:hover {
+.tri-box:hover {
 	background-position: 0 200px;
 }
 
@@ -392,7 +394,7 @@ header {
 
 #event-tabs label h1 {
 	margin: 0 0 -1px;
-	padding: 0 25px 5px;
+	/*padding: 0 25px 5px;*/
 	font-weight: 300;
 	font-size: 25px;
 	text-align: center;
@@ -419,8 +421,14 @@ header {
 }
 /*--end tabs style*/
 
+.event-btns {
+	display: flex;                  /* establish flex container */
+	flex-direction: row;
+	justify-content: flex-start; /* switched from default */
+}
+
 .event-btn {
-	float: left;
+	margin: auto;
 }
 
 .event-btn a {
@@ -432,8 +440,7 @@ header {
 	border-radius: 10px;
 	font-size: 18px;
 	letter-spacing: 1px;
-	margin-right: 20px;
-	line-height: 5;
+	line-height: 3;
 }
 
 .event-btn a:hover {
@@ -594,9 +601,45 @@ footer nav ul li a:hover {
 	}
 }
 
+@media (max-width: 500px) {
+	p {
+		font-size: 14px;
+	}
+	
+	#event-tabs label h1 {
+		font-size: 22px;
+	}
+	
+	#event-tabs h2 {
+		font-size: 18px;	
+	}
+}
+
 @media (max-width: 660px) {
+	.home-title {
+		margin: 0 30px;
+	}
+	
+	.home-title h1 {
+		font-size: 40px;
+		margin: 0 0 1rem;
+	}
+	
+	.home-title h2 {
+		font-size: 2.2rem;	
+	}
+	
 	.quote {
 		margin: 0 50px;
+	}
+	
+	.event-btns {
+		flex-direction: column;
+		justify-content: flex-start; /* switched from default */
+	}
+	
+	#event-tabs {
+		padding: 0 0 50px;
 	}
 }
 
@@ -661,6 +704,16 @@ footer nav ul li a:hover {
 	
 }
 
+@media (max-width: 760px) {
+	.link-boxes {
+		flex-direction: column;
+	}
+	
+	.tri-box {
+		margin: 0 auto 20px;
+	}
+}
+
 @media (max-width: 815px) {
 	.six.columns.footer-left, .six.columns.footer-right {
 		width: 100%;
@@ -684,7 +737,17 @@ footer nav ul li a:hover {
 	}
 }
 
+@media (max-width: 840px) {
+	#event-tabs label h1 {
+		margin: 0;
+	}
+}
+
 @media (max-width: 900px) {
+	.home-wrapper {
+		padding: 20px;
+	}
+	
 	/*--------------------*/
 	/*--Event Page Styles--*/
 	/*--------------------*/
