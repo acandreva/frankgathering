@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="keywords" content="event,journalism,communications,conference,summit,speakers,gathering,meeting,gainesville,university,florida,learning,education,sessions">
+    <meta name="author" content="Allison Logan">
     <title>frank</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 <?php wp_head(); ?>
 </head>
 <body>
