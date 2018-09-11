@@ -8,7 +8,7 @@
 <?php wp_head(); ?>
 </head>
 <body>
-    <header> 
+<header> 
       <div class="row siteheader">
           <div class="three columns siteinfo">
               <a href="https://allisoncandreva.com/test">
@@ -46,28 +46,25 @@
                   <p><?php bloginfo('description') ?></p>
               </a>
         </div>
-		<div class="mobile-sitenav">
-              <nav role="navigation" aria-label="<?php _e( 'Main Menu', 'frank-gathering' ); ?>" >
-                  <ul>
-                      <?php wp_nav_menu(array(
-                            'theme_location' => 'main-menu',
-                            'depth' => 1, 
-                            'items_wrap' => '%3$s', 
-                            'container' => false 
-                      )); ?>
-                      <span class="social-navigation">
-                      <?php wp_nav_menu(array(
-                              'theme_location' => 'social-links',
-                              'depth'          => 1,
-                              'link_before'    => '<span class="screen-reader-text">',
-                              'link_after'     => '</span>', 
-                              'items_wrap' => '%3$s', 
-                              'container' => false                
-                       ) ); ?>
-                       </span>
-                   </ul>
-               </nav>
-              <a class="toggle-nav" href="#">&#9776;</a>
+		<div class="mobile-nav">
+			<div class="social-navigation">
+              <?php wp_nav_menu(array(
+                      'theme_location' => 'social-links',
+                      'depth'          => 1,
+                      'link_before'    => '<span class="screen-reader-text">',
+                      'link_after'     => '</span>',                
+               ) ); ?>
+            </div>
+            <div id="myNav" class="overlay"><!--mobile-sitenav-->
+                <a href="javascript:void(0)" class="closebtn" id="mobile-close">&times;</a>
+                <div class="overlay-content"> 
+					<?php wp_nav_menu(array(
+                        'theme_location' => 'main-menu',
+                        'depth' => 1, 
+                  	)); ?>
+                </div><!--close overlay-content-->
+            </div><!--closes overlay-->
+            <span id="mobile-open" class="fas fa-bars"></span>
         </div>
       </div><!--closes mobile-siteheader-->
     </header>

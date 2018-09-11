@@ -1,12 +1,12 @@
 /* Open */
-jQuery(function($) {
-	"use strict";
-     $('#mobile-open').on('click', function() {
-    document.getElementById("myNav").style.height = "100%";
-     });
+jQuery(document).ready(function() {
+    
+	jQuery('#mobile-open').click(function(e) {
+		document.getElementById("myNav").style.width = "100%"; 
+    });
 
 /* Close */
-     $('#mobile-close').on('click', function() {
-    document.getElementById("myNav").style.height = "0%";
+     jQuery('#mobile-close').click(function(e) {
+    	document.getElementById("myNav").style.width = "0%";
      });
 });
