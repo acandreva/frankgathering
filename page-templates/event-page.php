@@ -11,11 +11,8 @@ get_header(); ?>
         $imageAlt    = esc_attr($imageArray['alt']);
         $image       = esc_url($imageArray['sizes']['background-quote-img']);
     ?>
-    <div class="full-img-bg" style="background-image: url(<?php echo $image; ?>">
-    	<span role="img" aria-label="<?php echo $imageAlt; ?>"> </span>
-			<?php if(get_field('text_overlay_2')){ //if the field is not empty
-                echo '<div class="quote">' . get_field( 'text_overlay_2' ) . '</div>'; //display it
-            } ?>
+    <div class="event-full-img-bg">
+			<img src="<?php echo $image; ?>" alt="<?php echo $imageAlt; ?>">
 	</div>
     
     <div class="container">

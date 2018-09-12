@@ -65,6 +65,16 @@ a:hover {
 	background-size: cover;
 }
 
+.event-full-img-bg {
+	max-width: 1200px;
+	margin: auto;
+}
+
+.event-full-img-bg img {
+	width: 100%;
+	height: auto;
+}
+
 .quote, .speaker-pg-title, .quote-home {
 	background-color: rgba(255,255,255,0.8);
 	-webkit-border-radius: 10px;
@@ -788,6 +798,9 @@ footer nav ul li a:hover {
 		color: #C54E90;
 	}
 	
+	.event-full-img-bg {
+		margin: 50px auto 0;
+	}
 }
 
 @media (max-width: 760px) {
