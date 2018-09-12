@@ -13,11 +13,10 @@ get_header(); ?>
     ?>
     <div class="full-img-bg" style="background-image: url(<?php echo $image; ?>">
     	<span role="img" aria-label="<?php echo $imageAlt; ?>"> </span>
-		<div class="quote">
-	        <?php the_field( 'text_overlay_2' ); ?>
-        </div>
+			<?php if(get_field('text_overlay_2')){ //if the field is not empty
+                echo '<div class="quote">' . get_field( 'text_overlay_2' ) . '</div>'; //display it
+            } ?>
 	</div>
-    
     <div class="container">
         <div class="row">
             <div class="three columns page-nav">
