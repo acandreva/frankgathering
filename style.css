@@ -353,6 +353,10 @@ header {
 	content: "\f431";
 }
 
+.social-navigation a[href*="spotify.com"]:before {
+	content: "\f1bc";
+}
+
 /*--------------------*/
 /*--Home Page Styles--*/
 /*--------------------*/
@@ -412,6 +416,23 @@ header {
 .join-us-btn a:hover {
 	background-color: #545151;
 	color: #f7b518;
+}
+
+.fts-twitter-div {
+	margin: 50px 0 20px;
+}
+
+.fts-twitter-div a {
+	color: #C54E90;
+}
+
+.fts-twitter-div a:hover {
+	color: #C54E90;
+	text-decoration: underline;
+}
+
+.fts-tweeter-wrap .tweeter-info {
+	border-bottom: #999 .5px solid;
 }
 
 .link-boxes {
@@ -618,6 +639,7 @@ header {
 footer {
 	padding: 20px 0;
 	border-top: .25px solid #73c92d;
+	width: 100%;
 }
 
 .footer-content {
