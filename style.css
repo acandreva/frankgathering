@@ -398,8 +398,17 @@ header {
 	padding: 0 100px;
 }
 
+.twitter-feed {
+	margin-top: 50px;
+}
+
 .home-content h2 {
 	text-align: center;
+}
+
+.twitter-feed h2 {
+	text-align: center;
+	line-height: 0;
 }
 
 .join-us-btn a {
@@ -419,7 +428,7 @@ header {
 }
 
 .fts-twitter-div {
-	margin: 50px 0 20px;
+	margin-bottom: 20px;
 }
 
 .fts-twitter-div a {

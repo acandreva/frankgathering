@@ -23,7 +23,7 @@ get_header(); ?>
                     endwhile;
                 endif; ?>
             </div>
-            <div class="four columns home-content">
+            <div class="four columns twitter-feed">
 				<?php the_field( 'home_twitter_feed' ); ?>
 			</div>
         </div>
