@@ -593,6 +593,10 @@ header {
 	outline: none;
 }
 
+.accordion-content a {
+	color: #C54E90;
+}
+
 .ui-state-default, .ui-state-active, .ui-state-focus {
 	border: none;
 }
