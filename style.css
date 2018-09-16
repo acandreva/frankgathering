@@ -71,7 +71,7 @@ a:hover {
 
 .event-full-img-bg {
 	max-width: 1200px;
-	margin: auto;
+	margin: 30px auto 0;
 }
 
 .event-full-img-bg img {
@@ -754,6 +754,10 @@ footer nav ul li a:hover {
 		font-size: 14px;
 	}
 	
+	.event-full-img-bg {
+		margin: 90px auto 0;
+	}
+	
 	#event-tabs label h1 {
 		font-size: 22px;
 	}
@@ -851,7 +855,7 @@ footer nav ul li a:hover {
 	}
 	
 	.event-full-img-bg {
-		margin: 50px auto 0;
+		margin: 70px auto 0;
 	}
 }
 
@@ -902,7 +906,11 @@ footer nav ul li a:hover {
 	/*--------------------*/
 	/*--Event Page Styles--*/
 	/*--------------------*/
-
+	
+	.event-full-img-bg {
+		margin: 50px auto 0;
+	}
+	
 	/*------ Tabs ------*/
 	#event-details .ctu-ultimate-style-heading-1 {
 		color: #000;
