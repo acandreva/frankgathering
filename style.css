@@ -798,8 +798,11 @@ footer nav ul li a:hover {
 @media (max-width: 720px) {
 	.one.columns, .two.columns, .three.columns, .four.columns, .five.columns, .six.columns, .seven.columns, .eight.columns, .nine.columns, .ten.columns, .eleven.columns, .twelve.columns {
 		width: 100%;
-		margin: 0;
-	}	
+	}
+
+	.link-boxes {
+		margin: 20px auto 0;	
+	}
 	
 	.page-nav {
 		display: none;
