@@ -61,6 +61,9 @@ get_header(); ?>
                             </a>
                         </div>
 					</div>
+                    <div class="sponsor-logos"><h2>Sponsors</h2>
+						<?php the_field( 'event_sponsor_logos' ); ?>
+                    </div>
 				</section>
 
 				<section id="content2" class="second-tab">

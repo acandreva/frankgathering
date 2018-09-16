@@ -36,6 +36,10 @@ h6 {font-size: 1.1rem;}
 	margin-top: 60px;
 }
 
+.nohero {
+	margin-top: 130px;
+}
+
 p {
 	font-size: 16px;
 	line-height: 1.5;
@@ -482,6 +486,11 @@ header {
 	display: none;
 	padding: 20px 0 0;
 }
+
+#event-tabs section .wp-show-posts {
+	display: block;
+}
+
 #event-tabs input {
 	display: none;
 }
@@ -519,6 +528,11 @@ header {
 
 #event-tabs h2 {
 	font-size: 22px;
+}
+
+.sponsor-logos h2 {
+	text-align: center;
+	padding-top: 30px;
 }
 /*--end tabs style*/
 
@@ -696,7 +710,7 @@ footer nav ul li a:hover {
 }
 
 @media (max-width: 440px) {
-	.quote {
+	.quote, .quote-home {
 		margin: 0 30px;
 	}
 }
@@ -718,6 +732,9 @@ footer nav ul li a:hover {
 	
 	.social-navigation {
 		margin: 0 20px !important;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end; 
 	}
 	
 	.social-navigation a {
@@ -760,7 +777,7 @@ footer nav ul li a:hover {
 		font-size: 2.2rem;	
 	}
 	
-	.quote {
+	.quote, .quote-home {
 		margin: 0 50px;
 	}
 	

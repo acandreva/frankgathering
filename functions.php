@@ -20,7 +20,6 @@ function frank_setup() {
 		  'main-menu' => __( 'Main Menu' ),
 		  'footer-menu' => __( 'Footer Menu' ),
 		  'social-links' => __( 'Social Links' ),
-		  'mobile-menu' => __( 'Mobile Menu' ),
 		  'event-menu' => __( 'Event Menu' )
 	));
 }
@@ -99,8 +98,8 @@ add_shortcode('wpb_childpages', 'wpb_list_child_pages');
 /*-------------- Search Box --------------*/
 add_theme_support('html5', array('search-form'));
 
-/*-------------- Menu Limit--------------- */
 
+/*-------------- Menu Limit--------------- */
 function custom_admin_js() {
 $screen = get_current_screen();
 if ( $screen->id != 'nav-menus' )
