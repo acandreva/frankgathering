@@ -26,12 +26,17 @@ get_header(); ?>
             <div class="three columns page-nav">
 				<?php echo do_shortcode( '[wpb_childpages]' );?>
             </div>
+            <?php if(do_shortcode( '[wpb_childpages]' )) : {?>
             <div class="three columns mobile-page-nav">
-              	<h1><a class="toggle-page-nav" href="#">menu</a></h1>
-				<?php echo do_shortcode( '[wpb_childpages]' );?>
+                <h1><a class="toggle-page-nav" href="#">menu</a></h1>
+				<?php echo do_shortcode( '[wpb_childpages]' );
+                }?>
             </div>
             <div class="nine columns">
-                <?php if (have_posts()) : 
+			<?php else: ?>
+            	<div class="twelve columns">
+				<?php endif; 
+				 if (have_posts()) : 
                     /* OUR DATA CONTEXT IS DEFINED  */
                     while (have_posts()) : the_post(); ?> 
                         <h1><?php the_title(); ?></h1>
