@@ -713,138 +713,111 @@ footer nav ul li a:hover {
 	margin-right: 18px;
 }
 
-
-@media (max-width: 1284px) {
-	.siteheader {
-		padding: 0 40px;
-	}
-	
-	.footer-content {
-		padding: 20px 40px;
+@media (max-width: 440px) {
+	.quote, .quote-home {
+		margin: 0 30px;
 	}
 }
 
-@media (max-width: 1194px) {
-	.container {
-		width: 90%;
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+@media (max-width: 425px) {
+	.tri-box {
+		height: 50px;
+		background-position: 50% 22%;
+	}
+	
+	tri-box:hover {
+		background-position: 50% 79%;
 	}
 }
 
-@media (max-width: 1129px) {
-	.two.columns.socialnav {
-		margin-left: 2%;
-		width: 15%;
-	}
-}
-
-@media (max-width: 1090px) {
-	.seven.columns.sitenav {
-		margin-left: 0;
-		width: 60%;	
-	}
-}
-
-@media (max-width: 1035px) {
-	.siteheader {
-		display: none;
-	}
-	
-	.mobile-siteheader {
-		display: inline-block !important;
-		width: 100%;
-	}
-	
-	.mobile-siteinfo {
-		float: left;
-		margin-left: 20px;
-	}
-	
-	.mobile-siteinfo h1 {
-		margin-bottom: 0.20em;
-		color: #000;
-	}
-	
-	.mobile-siteinfo p {
-		font-size: 14px;
-	}
-	
-	.mobile-siteinfo a, .mobile-siteinfo a:hover {
-		text-decoration: none;
+@media (max-width: 470px) {
+	.mobile-nav {
+		flex-direction: column-reverse;
 	}
 	
 	.social-navigation {
-		margin: 40px 20px;
+		margin: 0 20px !important;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end; 
 	}
 	
-	.social-navigation ul {
-		list-style: none;
-		margin: 0;
+	.social-navigation a {
+		width: 32px;
+		font-size: 30px;
+	}
+	
+	#mobile-open {
+		line-height: 1.6;
+		padding-right: 23px;
+		text-align: right;
 	}
 }
 
-@media (max-width: 970px) {
-	.tri-box {
-		width: 175px;
-		height: 175px;
-		margin: 10px;
-		background-position: 50% 7%;
+@media (max-width: 500px) {
+	p {
+		font-size: 14px;
 	}
-	
-	.tri-box:hover {
-		background-position: 50% 96%;
-	}
-}
-
-@media (max-width: 900px) {
-	.home-wrapper {
-		padding: 20px;
-	}
-	
-	/*--------------------*/
-	/*--Event Page Styles--*/
-	/*--------------------*/
 	
 	.event-full-img-bg {
-		margin: 50px auto 0;
+		margin: 90px auto 0;
 	}
 	
-	/*------ Tabs ------*/
-	#event-details .ctu-ultimate-style-heading-1 {
-		color: #000;
-	}
-	
-	#event-details .ctu-ultimate-style-heading-1.active {
-		color: #C54E90;
-		background-color: #fff;
-	}
-}
-
-@media (max-width: 840px) {
 	#event-tabs label h1 {
-		margin: 0;
+		font-size: 22px;
+	}
+	
+	#event-tabs h2 {
+		font-size: 18px;	
 	}
 }
 
-@media (max-width: 815px) {
-	.six.columns.footer-left, .six.columns.footer-right {
-		width: 100%;
-		margin: 0;
-		text-align: center;
+@media (max-width: 522px) {
+	.tri-box {
+		margin: 10px;
+		background-position: 50% 12%;
 	}
 	
-	.footer-right-content {
-		float: none;
+	tri-box:hover {
+		background-position: 50% 92%;
+	}
+}
+
+@media (max-width: 660px) {
+	.home-title {
+		margin: 0 30px;
 	}
 	
-	.menu-footer-menu-container {
-		margin-top: 0;
+	.home-title h1 {
+		font-size: 40px;
+		margin: 0 0 1rem;
 	}
 	
-	footer nav ul {
-		line-height: 1;
-		margin: 0 0 10px;
-		padding: 0 0 10px;
-		border-bottom: .25px solid #73c92d;
+	.home-title h2 {
+		font-size: 2.2rem;	
+	}
+	
+	.quote, .quote-home {
+		margin: 0 50px;
+	}
+	
+	.event-btns {
+		flex-direction: column;
+		justify-content: flex-start; /* switched from default */
+	}
+	
+	#event-tabs {
+		padding: 0 0 50px;
 	}
 }
 
@@ -854,8 +827,7 @@ footer nav ul li a:hover {
 	}
 
 	.link-boxes {
-		justify-content: center;
-		margin: 0;
+		justify-content: center;	
 	}
 	
 	.tri-box {
@@ -920,105 +892,159 @@ footer nav ul li a:hover {
 	}
 }
 
-@media (max-width: 660px) {
-	.home-title {
-		margin: 0 30px;
-	}
-	
-	.home-title h1 {
-		font-size: 40px;
-		margin: 0 0 1rem;
-	}
-	
-	.home-title h2 {
-		font-size: 2.2rem;	
-	}
-	
-	.quote, .quote-home {
-		margin: 0 50px;
-	}
-	
-	.event-btns {
+/*@media (max-width: 760px) {
+	.link-boxes {
 		flex-direction: column;
-		justify-content: flex-start; /* switched from default */
 	}
 	
-	#event-tabs {
-		padding: 0 0 50px;
-	}
-}
-
-@media (max-width: 522px) {
 	.tri-box {
-		margin: 10px;
+		margin: 0 auto 20px;
 	}
-}
+}*/
 
-@media (max-width: 500px) {
-	p {
-		font-size: 14px;
-	}
-	
-	.event-full-img-bg {
-		margin: 90px auto 0;
-	}
-	
-	#event-tabs label h1 {
-		font-size: 22px;
-	}
-	
-	#event-tabs h2 {
-		font-size: 18px;	
-	}
-}
-
-@media (max-width: 477px) {
+@media (max-width: 775px) {
 	.tri-box {
-		height: 50px;
-		background-position: 50% 22%;
+		width: 175px;
+		height: 175px;
+		margin: 20px;
+		background-position: 50% 7%;
 	}
 	
 	.tri-box:hover {
-		background-position: 50% 79%;
+		background-position: 50% 96%;
 	}
 }
 
-@media (max-width: 470px) {
-	.mobile-nav {
-		flex-direction: column-reverse;
+@media (max-width: 815px) {
+	.six.columns.footer-left, .six.columns.footer-right {
+		width: 100%;
+		margin: 0;
+		text-align: center;
+	}
+	
+	.footer-right-content {
+		float: none;
+	}
+	
+	.menu-footer-menu-container {
+		margin-top: 0;
+	}
+	
+	footer nav ul {
+		line-height: 1;
+		margin: 0 0 10px;
+		padding: 0 0 10px;
+		border-bottom: .25px solid #73c92d;
+	}
+}
+
+@media (max-width: 840px) {
+	#event-tabs label h1 {
+		margin: 0;
+	}
+}
+
+@media (max-width: 900px) {
+	.home-wrapper {
+		padding: 20px;
+	}
+	
+	/*--------------------*/
+	/*--Event Page Styles--*/
+	/*--------------------*/
+	
+	.event-full-img-bg {
+		margin: 50px auto 0;
+	}
+	
+	/*------ Tabs ------*/
+	#event-details .ctu-ultimate-style-heading-1 {
+		color: #000;
+	}
+	
+	#event-details .ctu-ultimate-style-heading-1.active {
+		color: #C54E90;
+		background-color: #fff;
+	}
+}
+
+@media (max-width: 970px) {
+	.tri-box {
+		width: 175px;
+		height: 175px;
+		margin: 10px;
+		background-position: 50% 7%;
+	}
+	
+	.tri-box:hover {
+		background-position: 50% 96%;
+	}
+}
+
+@media (max-width: 1035px) {
+	.siteheader {
+		display: none;
+	}
+	
+	.mobile-siteheader {
+		display: inline-block !important;
+		width: 100%;
+	}
+	
+	.mobile-siteinfo {
+		float: left;
+		margin-left: 20px;
+	}
+	
+	.mobile-siteinfo h1 {
+		margin-bottom: 0.20em;
+		color: #000;
+	}
+	
+	.mobile-siteinfo p {
+		font-size: 14px;
+	}
+	
+	.mobile-siteinfo a, .mobile-siteinfo a:hover {
+		text-decoration: none;
 	}
 	
 	.social-navigation {
-		margin: 0 20px !important;
-		display: flex;
-		flex-direction: row;
-		justify-content: flex-end; 
+		margin: 40px 20px;
 	}
 	
-	.social-navigation a {
-		width: 32px;
-		font-size: 30px;
-	}
-	
-	#mobile-open {
-		line-height: 1.6;
-		padding-right: 23px;
-		text-align: right;
+	.social-navigation ul {
+		list-style: none;
+		margin: 0;
 	}
 }
 
-/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-@media screen and (max-height: 450px) {
-    .overlay a {font-size: 20px}
-    .overlay .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-    }
+@media (max-width: 1090px) {
+	.seven.columns.sitenav {
+		margin-left: 0;
+		width: 60%;	
+	}
 }
 
-@media (max-width: 440px) {
-	.quote, .quote-home {
-		margin: 0 30px;
+@media (max-width: 1129px) {
+	.two.columns.socialnav {
+		margin-left: 2%;
+		width: 15%;
+	}
+}
+
+@media (max-width: 1194px) {
+	.container {
+		width: 90%;
+	}
+}
+
+@media (max-width: 1284px) {
+	.siteheader {
+		padding: 0 40px;
+	}
+	
+	.footer-content {
+		padding: 20px 40px;
 	}
 }

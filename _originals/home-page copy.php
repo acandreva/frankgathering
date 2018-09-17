@@ -14,7 +14,7 @@ get_header(); ?>
     
     <div class="container home-wrapper">
         <div class="row">
-            <div class="twelve columns home-content">
+            <div class="eight columns home-content">
             	<h2 class="join-us-btn"><a href="https://allisoncandreva.com/test/frank-2019/">join us</a></h2>
                 <?php if (have_posts()) : 
                     /* OUR DATA CONTEXT IS DEFINED  */
@@ -23,18 +23,13 @@ get_header(); ?>
                     endwhile;
                 endif; ?>
             </div>
-        </div>
-        
-        <div class="row">
             <div class="four columns twitter-feed">
 				<?php the_field( 'home_twitter_feed' ); ?>
 			</div>
-            <div class="eight columns link-boxes">
-                <a href="#" title="prize" target="_blank">
-                    <div class="tri-box" style="background-image: url(https://allisoncandreva.com/test/wp-content/themes/frank/images/box_bg_imgs_t.png)" >    	
-                    <span role="img" aria-label="An image of buttons from frank 2016"> </span>
-                    </div>
-                </a>
+        </div>
+        
+        <div class="row">
+            <div class="twelve columns link-boxes">
                 <a href="#" title="prize" target="_blank">
                     <div class="tri-box" style="background-image: url(https://allisoncandreva.com/test/wp-content/themes/frank/images/box_bg_imgs_t.png)" >    	
                     <span role="img" aria-label="An image of buttons from frank 2016"> </span>
