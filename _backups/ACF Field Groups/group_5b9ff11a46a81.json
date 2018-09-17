@@ -1,0 +1,90 @@
+[
+    {
+        "key": "group_5b9ff11a46a81",
+        "title": "Duplicate Content",
+        "fields": [
+            {
+                "key": "field_5b7dda729be28",
+                "label": "Image with Overlay 2",
+                "name": "image_with_overlay_2",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "preview_size": "background-quote-img",
+                "library": "all",
+                "return_format": "array",
+                "min_width": 0,
+                "min_height": 0,
+                "min_size": 0,
+                "max_width": 0,
+                "max_height": 0,
+                "max_size": 0,
+                "mime_types": ""
+            },
+            {
+                "key": "field_5b7ddb0c9be29",
+                "label": "Text Overlay 2",
+                "name": "text_overlay_2",
+                "type": "wysiwyg",
+                "instructions": "Content for text overlay goes here.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "toolbar": "full",
+                "media_upload": 0,
+                "tabs": "all",
+                "delay": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "default"
+                },
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "page"
+                }
+            ],
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "page-templates\/event-page.php"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "seamless",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "discussion",
+            "comments",
+            "slug",
+            "author",
+            "format",
+            "featured_image",
+            "categories",
+            "tags",
+            "send-trackbacks"
+        ],
+        "active": 1,
+        "description": ""
+    }
+]

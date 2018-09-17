@@ -1,0 +1,126 @@
+[
+    {
+        "key": "group_5b9ff1245eb74",
+        "title": "Speaker Modules",
+        "fields": [
+            {
+                "key": "field_5b8201551efd2",
+                "label": "Portrait",
+                "name": "speaker_portrait",
+                "type": "image",
+                "instructions": "Add the speakers portrait here. Image must be a minimum of 200px wide.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "preview_size": "speaker-img",
+                "library": "all",
+                "return_format": "array",
+                "min_width": 0,
+                "min_height": 0,
+                "min_size": 0,
+                "max_width": 0,
+                "max_height": 0,
+                "max_size": 0,
+                "mime_types": ""
+            },
+            {
+                "key": "field_5b8201a51efd3",
+                "label": "Name",
+                "name": "speaker_name",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "Jane Smith",
+                "prepend": "",
+                "append": "",
+                "formatting": "none",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5b8202441efd4",
+                "label": "Title",
+                "name": "speaker_title",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "President, Big Company",
+                "prepend": "",
+                "append": "",
+                "formatting": "none",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5b8202771efd5",
+                "label": "Bio",
+                "name": "speaker_bio",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": 1000,
+                "rows": 10,
+                "new_lines": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_category",
+                    "operator": "==",
+                    "value": "5"
+                },
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "post"
+                },
+                {
+                    "param": "page_template",
+                    "operator": "!=",
+                    "value": "default"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "acf_after_title",
+        "style": "seamless",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "discussion",
+            "comments",
+            "revisions",
+            "author",
+            "format",
+            "tags",
+            "send-trackbacks"
+        ],
+        "active": 1,
+        "description": ""
+    }
+]

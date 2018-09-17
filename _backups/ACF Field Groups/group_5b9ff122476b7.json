@@ -1,0 +1,137 @@
+[
+    {
+        "key": "group_5b9ff122476b7",
+        "title": "Home Page",
+        "fields": [
+            {
+                "key": "field_5b7a225c39e34",
+                "label": "Video Overlay Main",
+                "name": "video_overlay_main",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "formatting": "html",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5b7a2511737d3",
+                "label": "Video Overlay Subtext",
+                "name": "video_overlay_subtext",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "formatting": "html",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5b99c17bb6b57",
+                "label": "Twitter Feed",
+                "name": "home_twitter_feed",
+                "type": "wysiwyg",
+                "instructions": "Add Twitter shortcode here.",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "toolbar": "full",
+                "media_upload": 0,
+                "tabs": "all",
+                "delay": 0
+            },
+            {
+                "key": "field_5b78c7c0337c8",
+                "label": "Image with Overlay",
+                "name": "image_with_overlay",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "preview_size": "background-quote-img",
+                "library": "all",
+                "return_format": "array",
+                "min_width": 0,
+                "min_height": 0,
+                "min_size": 0,
+                "max_width": 0,
+                "max_height": 0,
+                "max_size": 0,
+                "mime_types": ""
+            },
+            {
+                "key": "field_5b78c8cd337c9",
+                "label": "Text Overlay",
+                "name": "text_overlay",
+                "type": "wysiwyg",
+                "instructions": "Content for text overlay goes here.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "toolbar": "full",
+                "media_upload": 0,
+                "tabs": "all",
+                "delay": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "page-templates\/home-page.php"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "seamless",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "discussion",
+            "comments",
+            "slug",
+            "author",
+            "format",
+            "featured_image",
+            "categories",
+            "tags",
+            "send-trackbacks"
+        ],
+        "active": 1,
+        "description": ""
+    }
+]
