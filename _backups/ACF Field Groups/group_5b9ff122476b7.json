@@ -64,7 +64,7 @@
             },
             {
                 "key": "field_5b78c7c0337c8",
-                "label": "Image with Overlay",
+                "label": "Full Width Image",
                 "name": "image_with_overlay",
                 "type": "image",
                 "instructions": "",
@@ -75,35 +75,42 @@
                     "class": "",
                     "id": ""
                 },
+                "return_format": "array",
                 "preview_size": "background-quote-img",
                 "library": "all",
-                "return_format": "array",
-                "min_width": 0,
-                "min_height": 0,
-                "min_size": 0,
-                "max_width": 0,
-                "max_height": 0,
-                "max_size": 0,
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
                 "mime_types": ""
             },
             {
                 "key": "field_5b78c8cd337c9",
                 "label": "Text Overlay",
                 "name": "text_overlay",
-                "type": "wysiwyg",
+                "type": "textarea",
                 "instructions": "Content for text overlay goes here.",
                 "required": 0,
-                "conditional_logic": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5b78c7c0337c8",
+                            "operator": "!=empty"
+                        }
+                    ]
+                ],
                 "wrapper": {
                     "width": "",
                     "class": "",
                     "id": ""
                 },
                 "default_value": "",
-                "toolbar": "full",
-                "media_upload": 0,
-                "tabs": "all",
-                "delay": 0
+                "placeholder": "",
+                "maxlength": 230,
+                "rows": 5,
+                "new_lines": "wpautop"
             }
         ],
         "location": [

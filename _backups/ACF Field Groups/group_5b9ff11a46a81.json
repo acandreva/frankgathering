@@ -5,7 +5,7 @@
         "fields": [
             {
                 "key": "field_5b7dda729be28",
-                "label": "Image with Overlay 2",
+                "label": "Hero Image",
                 "name": "image_with_overlay_2",
                 "type": "image",
                 "instructions": "",
@@ -16,35 +16,42 @@
                     "class": "",
                     "id": ""
                 },
+                "return_format": "array",
                 "preview_size": "background-quote-img",
                 "library": "all",
-                "return_format": "array",
-                "min_width": 0,
-                "min_height": 0,
-                "min_size": 0,
-                "max_width": 0,
-                "max_height": 0,
-                "max_size": 0,
+                "min_width": 1200,
+                "min_height": 500,
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
                 "mime_types": ""
             },
             {
                 "key": "field_5b7ddb0c9be29",
-                "label": "Text Overlay 2",
+                "label": "Text Overlay",
                 "name": "text_overlay_2",
-                "type": "wysiwyg",
-                "instructions": "Content for text overlay goes here.",
+                "type": "textarea",
+                "instructions": "Content for text overlay goes below.",
                 "required": 0,
-                "conditional_logic": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5b7dda729be28",
+                            "operator": "!=empty"
+                        }
+                    ]
+                ],
                 "wrapper": {
                     "width": "",
                     "class": "",
                     "id": ""
                 },
                 "default_value": "",
-                "toolbar": "full",
-                "media_upload": 0,
-                "tabs": "all",
-                "delay": 0
+                "placeholder": "",
+                "maxlength": 230,
+                "rows": 5,
+                "new_lines": "wpautop"
             }
         ],
         "location": [
