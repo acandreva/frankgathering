@@ -354,6 +354,15 @@ header {
 	content: "";
 }
 
+.social-navigation a[href*="instagram.com"]:before {
+	background-image: url(https://allisoncandreva.com/test/wp-content/themes/frank/images/instagram.png);
+	background-size: 32px;
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	content: "";
+}
+
 .social-navigation a[href*="linkedin.com"]:before {
 	background-image: url(https://allisoncandreva.com/test/wp-content/themes/frank/images/linkedin.png);
 	background-size: 32px;
@@ -371,25 +380,43 @@ header {
 	height: 32px;
 	content: "";
 }
+
+.social-navigation a[href*="youtube.com"]:before {
+	background-image: url(https://allisoncandreva.com/test/wp-content/themes/frank/images/youtube.png);
+	background-size: 32px;
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	content: "";
+}
+
+.social-navigation a[href*="spotify.com"]:before {
+	background-image: url(https://allisoncandreva.com/test/wp-content/themes/frank/images/spotify.png);
+	background-size: 32px;
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	content: "";
+}
 /*.social-navigation a[href*="facebook.com"]:before {
 	content: "\f082";
 }
 
 .social-navigation a[href*="twitter.com"]:before {
 	content: "\f081";
-}*/
+}
 
 .social-navigation a[href*="instagram.com"]:before {
 	content: "\f16d";
 }
 
-/*.social-navigation a[href*="linkedin.com"]:before {
+.social-navigation a[href*="linkedin.com"]:before {
 	content: "\f08c";
 }
 
 .social-navigation a[href*="vimeo.com"]:before {
 	content: "\f194";
-}*/
+}
 
 .social-navigation a[href*="youtube.com"]:before {
 	content: "\f431";
@@ -397,7 +424,7 @@ header {
 
 .social-navigation a[href*="spotify.com"]:before {
 	content: "\f1bc";
-}
+}*/
 
 /*--------------------*/
 /*--Home Page Styles--*/
