@@ -1,6 +1,6 @@
-/* Open */
 jQuery(document).ready(function() {
-    
+/*Styles for mobile nav*/
+ /* Open */   
 	jQuery('#mobile-open').click(function(e) {
 		document.getElementById("myNav").style.width = "100%"; 
     });
