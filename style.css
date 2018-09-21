@@ -319,9 +319,6 @@ header {
 }
 
 .social-navigation a {
-	font-family: FontAwesome;
-	font-size: 36px;
-	color: #f7b518;
 	display: block;
 	position: relative;
 	width: 35px;
@@ -329,74 +326,41 @@ header {
 }
 
 .social-navigation a:before {
-	content: "\f415";
-	height: 33px;
+	width: 32px;
+	height: 32px;
+	content: "";
+	background-size: 32px;
+	display: inline-block;
 	line-height: 33px;
 	text-align: center;
-	width: 33px;
 }
 
 .social-navigation a[href*="facebook.com"]:before {
 	background-image: url(https://allisoncandreva.com/test/wp-content/themes/frank/images/facebook.png);
-	background-size: 32px;
-	display: inline-block;
-	width: 32px;
-	height: 32px;
-	content: "";
 }
 
 .social-navigation a[href*="twitter.com"]:before {
 	background-image: url(https://allisoncandreva.com/test/wp-content/themes/frank/images/twitter.png);
-	background-size: 32px;
-	display: inline-block;
-	width: 32px;
-	height: 32px;
-	content: "";
 }
 
 .social-navigation a[href*="instagram.com"]:before {
 	background-image: url(https://allisoncandreva.com/test/wp-content/themes/frank/images/instagram.png);
-	background-size: 32px;
-	display: inline-block;
-	width: 32px;
-	height: 32px;
-	content: "";
 }
 
 .social-navigation a[href*="linkedin.com"]:before {
 	background-image: url(https://allisoncandreva.com/test/wp-content/themes/frank/images/linkedin.png);
-	background-size: 32px;
-	display: inline-block;
-	width: 32px;
-	height: 32px;
-	content: "";
 }
 
 .social-navigation a[href*="vimeo.com"]:before {
 	background-image: url(https://allisoncandreva.com/test/wp-content/themes/frank/images/vimeo.png);
-	background-size: 32px;
-	display: inline-block;
-	width: 32px;
-	height: 32px;
-	content: "";
 }
 
 .social-navigation a[href*="youtube.com"]:before {
 	background-image: url(https://allisoncandreva.com/test/wp-content/themes/frank/images/youtube.png);
-	background-size: 32px;
-	display: inline-block;
-	width: 32px;
-	height: 32px;
-	content: "";
 }
 
 .social-navigation a[href*="spotify.com"]:before {
 	background-image: url(https://allisoncandreva.com/test/wp-content/themes/frank/images/spotify.png);
-	background-size: 32px;
-	display: inline-block;
-	width: 32px;
-	height: 32px;
-	content: "";
 }
 /*.social-navigation a[href*="facebook.com"]:before {
 	content: "\f082";
@@ -665,6 +629,20 @@ header {
 
 .toggle-page-nav, .mobile-page-nav {
     display: none !important;
+}
+
+/*--- Attendees List Table ---*/
+
+input[type="search"] {
+	height: 12px;
+	border: none;
+	border-bottom: #ccc solid .5px;
+	border-radius: unset;
+	font-weight: 100;
+}
+
+.dataTables_filter label {
+	font-weight: 100;
 }
 
 /*--- Accordions ---*/
@@ -1058,11 +1036,6 @@ footer nav ul li a:hover {
 		display: flex;
 		flex-direction: row;
 		justify-content: flex-end; 
-	}
-	
-	.social-navigation a {
-		width: 32px;
-		font-size: 30px;
 	}
 	
 	#mobile-open {
