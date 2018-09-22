@@ -633,6 +633,10 @@ header {
 
 /*--- Attendees List Table ---*/
 
+.dataTables_wrapper {
+	font-size: 14px;
+}
+
 input[type="search"] {
 	height: 12px;
 	border: none;
@@ -641,8 +645,41 @@ input[type="search"] {
 	font-weight: 100;
 }
 
+input[type="search"]:focus {
+	border: none;
+	border-bottom: #ccc solid .5px;
+}
+
+select {
+	height: 26px;
+}
+
 .dataTables_filter label {
 	font-weight: 100;
+}
+
+table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>td:first-child:before, table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>th:first-child:before {
+	font-family: FontAwesome;
+	content: "\f077"; /*chevron up*/
+	font-size: 16px;
+	color: #f7b518;
+	background-color: #fff;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+}
+
+table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before, table.dataTable.dtr-inline.collapsed>tbody>tr.parent>th:first-child:before {
+	content: "\f078" !important; /*chevron down*/
+	color: #f7b518 !important;
+	background-color: #fff !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+	border: none;
+	background: none;
+	color: #C54E90 !important;
+	text-decoration: underline;
 }
 
 /*--- Accordions ---*/
@@ -1032,10 +1069,21 @@ footer nav ul li a:hover {
 	}
 	
 	.social-navigation {
-		margin: 0 20px !important;
+		margin: 0 20px 0 10px !important;
 		display: flex;
 		flex-direction: row;
 		justify-content: flex-end; 
+	}
+	
+	
+	.social-navigation a {
+		width: 30px;
+	}
+	
+	.social-navigation a:before {
+		width: 27px;
+		height: 27px;
+		background-size: 28px;
 	}
 	
 	#mobile-open {
