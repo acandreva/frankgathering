@@ -235,7 +235,6 @@ header {
 }
 
 .mobile-nav {
-	float: right;	
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end; 
@@ -419,9 +418,13 @@ header {
 .home-title h1 {
 	font-size: 50px;
 	margin: 0 0 2rem;
+	font-family: Lato, Arial, Helvetica, sans-serif;
+	font-weight: 400;
 }
 
 .home-title h2 {
+	font-family: Lato, arial, helvetica, sans-serif;
+	font-weight: 400px !important;
 	margin: 0;
 }
 
@@ -830,22 +833,29 @@ footer nav ul li a:hover {
 	}
 	
 	.mobile-siteheader {
-		display: inline-block !important;
-		width: 100%;
+		/*display: inline-block !important;
+		width: 100%;*/
+		display: flex !important;
+		flex-direction: row;
+		justify-content: space-between; 
 	}
 	
 	.mobile-siteinfo {
-		float: left;
 		margin-left: 20px;
 	}
 	
 	.mobile-siteinfo h1 {
-		margin-bottom: 0.20em;
+		margin-bottom: 0.10em;
 		color: #000;
+		font-family: Lato, Arial, Helvetica, sans-serif;
+		font-weight: 400;
+		font-size: 3.5rem;
 	}
 	
 	.mobile-siteinfo p {
 		font-size: 14px;
+		font-family: Lato, Arial, Helvetica, sans-serif;
+		font-weight: 400;
 	}
 	
 	.mobile-siteinfo a, .mobile-siteinfo a:hover {
@@ -933,6 +943,10 @@ footer nav ul li a:hover {
 		width: 100%;
 	}
 
+	.mobile-siteinfo {
+		margin-left: 10px;
+	}
+	
 	.link-boxes {
 		justify-content: center;
 		margin: 0;
@@ -1069,7 +1083,7 @@ footer nav ul li a:hover {
 	}
 	
 	.social-navigation {
-		margin: 0 20px 0 10px !important;
+		margin: 0 10px 0 !important;
 		display: flex;
 		flex-direction: row;
 		justify-content: flex-end; 
@@ -1083,12 +1097,12 @@ footer nav ul li a:hover {
 	.social-navigation a:before {
 		width: 27px;
 		height: 27px;
-		background-size: 28px;
+		background-size: 27px;
 	}
 	
 	#mobile-open {
 		line-height: 1.6;
-		padding-right: 23px;
+		padding-right: 14px;
 		text-align: right;
 	}
 }

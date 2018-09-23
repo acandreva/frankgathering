@@ -40,9 +40,13 @@ function frank_img_sizes( $sizes ) {
 /*-------------- Enqueue Styles--------------- */
 
 function add_theme_scripts() {
+	wp_enqueue_style( 'skeleton', get_stylesheet_directory_uri() . '/css/skeleton.css', array());
+	wp_enqueue_style( 'normalize', get_stylesheet_directory_uri() . '/css/normalize.css', array());
 	wp_enqueue_style( 'style', get_stylesheet_uri() );
 	wp_enqueue_script( 'burger-menu-script', get_stylesheet_directory_uri() . '/js/burger-menu.js', array( 'jquery' ) );
 	wp_enqueue_script( 'main', get_stylesheet_directory_uri() . '/js/main.js', array( 'jquery' ) );
+	wp_register_style( 'Lato', 'https://fonts.googleapis.com/css?family=Lato:300,400,700,900' );
+	wp_enqueue_style( 'Lato');
 }
 add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
 

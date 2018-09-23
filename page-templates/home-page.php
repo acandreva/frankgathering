@@ -31,13 +31,13 @@ get_header(); ?>
 			</div>
             <div class="eight columns link-boxes">
                 <a href="#" title="prize" target="_blank">
-                    <div class="tri-box" style="background-image: url(https://allisoncandreva.com/test/wp-content/themes/frank/images/box_bg_imgs_t.png)" >    	
+                    <div class="tri-box" style="background-image: url(https://allisoncandreva.com/test/wp-content/themes/frank/images/box_bg_img_1.png)" >    	
                     <span role="img" aria-label="An image of buttons from frank 2016"> </span>
                     </div>
                 </a>
                 <a href="#" title="prize" target="_blank">
-                    <div class="tri-box" style="background-image: url(https://allisoncandreva.com/test/wp-content/themes/frank/images/box_bg_imgs_t.png)" >    	
-                    <span role="img" aria-label="An image of buttons from frank 2016"> </span>
+                    <div class="tri-box" style="background-image: url(https://allisoncandreva.com/test/wp-content/themes/frank/images/box_bg_img_1.png)" >    	
+                    <span role="img" aria-label="A woman attending frank 2016"> </span>
                     </div>
                 </a>
                 <a href="https://www.jou.ufl.edu/cpic/" title="Visit the Center for Public Interest Communications"  target="_blank">
