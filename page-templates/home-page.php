@@ -30,23 +30,27 @@ get_header(); ?>
 				<?php the_field( 'home_twitter_feed' ); ?>
 			</div>
             <div class="eight columns link-boxes">
-                <a href="#" title="prize" target="_blank">
+                <a href="<?php the_field( 'button_1_link' ); ?>" title="<?php the_field( 'button_1_text' ); ?>" target="_blank">
                     <div class="tri-box" style="background-image: url(https://allisoncandreva.com/test/wp-content/themes/frank/images/box_bg_img_1.png)" >    	
                     <span role="img" aria-label="An image of buttons from frank 2016"> </span>
+                    <h5><?php the_field( 'button_1_text' ); ?></h5>
                     </div>
                 </a>
-                <a href="#" title="prize" target="_blank">
+                <a href="<?php the_field( 'button_2_link' ); ?>" title="<?php the_field( 'button_2_text' ); ?>" target="_blank">
                     <div class="tri-box" style="background-image: url(https://allisoncandreva.com/test/wp-content/themes/frank/images/box_bg_img_2.png)" >    	
                     <span role="img" aria-label="A woman attending frank 2016"> </span>
+                    <h5><?php the_field( 'button_2_text' ); ?></h5>
                     </div>
                 </a>
-                <a href="https://www.jou.ufl.edu/cpic/" title="Visit the Center for Public Interest Communications"  target="_blank">
-                    <div class="tri-box" style="background-image: url(https://allisoncandreva.com/test/wp-content/themes/frank/images/box_bg_imgs_t.png)"                         <span role="img" aria-label="An image of buttons from frank 2016"> </span>
+                <a href="<?php the_field( 'button_3_link' ); ?>" title="<?php the_field( 'button_3_text' ); ?>" target="_blank">
+                    <div class="tri-box" style="background-image: url(https://allisoncandreva.com/test/wp-content/themes/frank/images/box_bg_img_3.png)"                         <span role="img" aria-label="An image of buttons from frank 2016"> </span>
+                    <h5><?php the_field( 'button_3_text' ); ?></h5>
                     </div>
                 </a>
-                <a href="http://changeville.us/" title="Visit changeville's site">
-                    <div class="tri-box" style="background-image: url(https://allisoncandreva.com/test/wp-content/themes/frank/images/box_bg_imgs_t.png)" >
-                    <span role="img" aria-label="An image of buttons from frank 2016"> </span>
+                <a href="<?php the_field( 'button_4_link' ); ?>" title="<?php the_field( 'button_4_text' ); ?>" target="_blank">
+                    <div class="tri-box" style="background-image: url(https://allisoncandreva.com/test/wp-content/themes/frank/images/box_bg_img.png)" >
+                    <span role="img" aria-label="A woman with an umbrella at frank"> </span>
+                    <h5><?php the_field( 'button_4_text' ); ?></h5>
                     </div>
                 </a>
             </div>

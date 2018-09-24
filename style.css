@@ -494,6 +494,19 @@ header {
 	width: 200px;
 	height: 200px;
 	margin: 10px;
+	color: #fff;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.tri-box h5 {
+	font-family: Lato, Arial, Helvetica, sans-serif;
+	font-size: 2.2rem;
+	font-weight: 400;
+	margin: 0;
+	line-height: 1.1;
 }
 
 .link-boxes a {
@@ -502,6 +515,7 @@ header {
 
 .tri-box:hover {
 	background-position: 0 200px;
+	color: #C54E90;
 }
 
 
