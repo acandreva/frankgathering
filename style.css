@@ -833,8 +833,6 @@ footer nav ul li a:hover {
 	}
 	
 	.mobile-siteheader {
-		/*display: inline-block !important;
-		width: 100%;*/
 		display: flex !important;
 		flex-direction: row;
 		justify-content: space-between; 
@@ -1068,12 +1066,12 @@ footer nav ul li a:hover {
 
 @media (max-width: 477px) {
 	.tri-box {
-		height: 50px;
-		background-position: 50% 22%;
+		height: 90px;
+		background-position: 50% 17.5%;
 	}
 	
 	.tri-box:hover {
-		background-position: 50% 79%;
+		background-position: 50% 82%;
 	}
 }
 

@@ -36,7 +36,7 @@ get_header(); ?>
                     </div>
                 </a>
                 <a href="#" title="prize" target="_blank">
-                    <div class="tri-box" style="background-image: url(https://allisoncandreva.com/test/wp-content/themes/frank/images/box_bg_img_1.png)" >    	
+                    <div class="tri-box" style="background-image: url(https://allisoncandreva.com/test/wp-content/themes/frank/images/box_bg_img_2.png)" >    	
                     <span role="img" aria-label="A woman attending frank 2016"> </span>
                     </div>
                 </a>
