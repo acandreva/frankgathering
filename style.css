@@ -235,6 +235,11 @@ header {
 }
 
 .mobile-nav {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -moz-flex;
+	display: -webkit-flex;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end; 
@@ -484,6 +489,11 @@ header {
 
 .link-boxes {
 	margin-bottom: 50px;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -moz-flex;
+	display: -webkit-flex;
 	display: flex;                  /* establish flex container */
 	flex-direction: row;
 	justify-content: flex-end; /* switched from default */
@@ -496,6 +506,11 @@ header {
 	margin: 10px;
 	color: #fff;
 	text-align: center;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -moz-flex;
+	display: -webkit-flex;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -507,6 +522,7 @@ header {
 	font-weight: 400;
 	margin: 0;
 	line-height: 1.1;
+	word-spacing: 3px;
 }
 
 .link-boxes a {
@@ -587,6 +603,11 @@ header {
 /*--end tabs style*/
 
 .event-btns {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -moz-flex;
+	display: -webkit-flex;
 	display: flex;                  /* establish flex container */
 	flex-direction: row;
 	justify-content: flex-start; /* switched from default */
@@ -847,6 +868,11 @@ footer nav ul li a:hover {
 	}
 	
 	.mobile-siteheader {
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -moz-flex;
+		display: -webkit-flex;
 		display: flex !important;
 		flex-direction: row;
 		justify-content: space-between; 
@@ -1096,6 +1122,11 @@ footer nav ul li a:hover {
 	
 	.social-navigation {
 		margin: 0 10px 0 !important;
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -moz-flex;
+		display: -webkit-flex;
 		display: flex;
 		flex-direction: row;
 		justify-content: flex-end; 
