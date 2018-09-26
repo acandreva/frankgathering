@@ -435,13 +435,9 @@ header {
 .home-title h1 {
 	font-size: 50px;
 	margin: 0 0 2rem;
-/*	font-family: Lato, Arial, Helvetica, sans-serif;
-	font-weight: 400;*/
 }
 
 .home-title h2 {
-	/*font-family: Lato, arial, helvetica, sans-serif;
-	font-weight: 400px !important;*/
 	margin: 0;
 }
 
@@ -529,8 +525,6 @@ header {
 }
 
 .tri-box h5 {
-	/*font-family: Lato, Arial, Helvetica, sans-serif;
-	font-weight: 400;*/
 	font-size: 2.2rem;
 	margin: 0;
 	line-height: 1.1;
@@ -897,8 +891,6 @@ footer nav ul li a:hover {
 	.mobile-siteinfo h1 {
 		margin-bottom: 0.10em;
 		color: #000;
-		/*font-family: Lato, Arial, Helvetica, sans-serif;
-		font-weight: 400;*/
 		font-size: 3.5rem;
 	}
 	
