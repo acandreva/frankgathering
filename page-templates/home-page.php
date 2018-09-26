@@ -6,9 +6,11 @@
  */
 get_header(); ?>
     <div class="hero">
-        <div class="home-title">
-	        <h1><?php the_field( 'video_overlay_main' ); ?></h1>
-	        <h2><?php the_field( 'video_overlay_subtext' ); ?></h2>
+        <div class="home-overlay">
+            <div class="home-title">
+                <h1><?php the_field( 'video_overlay_main' ); ?></h1>
+                <h2><?php the_field( 'video_overlay_subtext' ); ?></h2>
+            </div>
         </div>
     </div>
     
