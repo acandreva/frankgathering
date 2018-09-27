@@ -14,6 +14,7 @@ function frank_setup() {
 	//Add support for custom image sizes
 	add_image_size( 'background-quote-img', 1200, 500, array( 'center', 'center' ) ); //(cropped)
 	add_image_size( 'speaker-img', 200, 200, array( 'top', 'center' ) ); //(cropped)
+	add_image_size( 'home-btn', 200, 200, array( 'center', 'center' ) ); //(cropped)
 	
 	//Add support for custom menus
 	register_nav_menus( array(
@@ -34,14 +35,15 @@ function frank_img_sizes( $sizes ) {
     return array_merge( $sizes, array(
         'background-quote-img' => __( 'Background for quote' ),
         'speaker-img' => __( 'Speaker' ),
+        'home-btn' => __( 'Home Button' ),
     ) );
 }
 
 /*-------------- Enqueue Styles--------------- */
 
 function add_theme_scripts() {
-	wp_enqueue_style( 'skeleton', get_stylesheet_directory_uri() . '/css/skeleton.css', array());
-	wp_enqueue_style( 'normalize', get_stylesheet_directory_uri() . '/css/normalize.css', array());
+	wp_enqueue_style( 'skeleton', get_stylesheet_directory_uri() . '/css/skeleton.css');
+	wp_enqueue_style( 'normalize', get_stylesheet_directory_uri() . '/css/normalize.css');
 	wp_enqueue_style( 'style', get_stylesheet_uri() );
 	wp_enqueue_script( 'burger-menu-script', get_stylesheet_directory_uri() . '/js/burger-menu.js', array( 'jquery' ) );
 	wp_enqueue_script( 'main', get_stylesheet_directory_uri() . '/js/main.js', array( 'jquery' ) );
