@@ -44,11 +44,11 @@
                 "maxlength": ""
             },
             {
-                "key": "field_5b99c17bb6b57",
-                "label": "Twitter Feed",
-                "name": "home_twitter_feed",
-                "type": "wysiwyg",
-                "instructions": "Add Twitter shortcode here.",
+                "key": "field_5bac27a59491b",
+                "label": "Button 1 Image",
+                "name": "button_1_image",
+                "type": "image",
+                "instructions": "",
                 "required": 1,
                 "conditional_logic": 0,
                 "wrapper": {
@@ -56,61 +56,16 @@
                     "class": "",
                     "id": ""
                 },
-                "default_value": "",
-                "toolbar": "full",
-                "media_upload": 0,
-                "tabs": "all",
-                "delay": 0
-            },
-            {
-                "key": "field_5b78c7c0337c8",
-                "label": "Full Width Image",
-                "name": "image_with_overlay",
-                "type": "image",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
                 "return_format": "array",
-                "preview_size": "background-quote-img",
+                "preview_size": "full",
                 "library": "all",
-                "min_width": "",
-                "min_height": "",
+                "min_width": 200,
+                "min_height": 200,
                 "min_size": "",
-                "max_width": "",
-                "max_height": "",
+                "max_width": 200,
+                "max_height": 200,
                 "max_size": "",
-                "mime_types": ""
-            },
-            {
-                "key": "field_5b78c8cd337c9",
-                "label": "Text Overlay",
-                "name": "text_overlay",
-                "type": "textarea",
-                "instructions": "Content for text overlay goes here.",
-                "required": 0,
-                "conditional_logic": [
-                    [
-                        {
-                            "field": "field_5b78c7c0337c8",
-                            "operator": "!=empty"
-                        }
-                    ]
-                ],
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "placeholder": "",
-                "maxlength": 230,
-                "rows": 5,
-                "new_lines": "wpautop"
+                "mime_types": "png, jpg"
             },
             {
                 "key": "field_5ba84b945c512",
@@ -263,6 +218,56 @@
                 "prepend": "",
                 "append": "",
                 "maxlength": ""
+            },
+            {
+                "key": "field_5b78c7c0337c8",
+                "label": "Full Width Image",
+                "name": "image_with_overlay",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "background-quote-img",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_5b78c8cd337c9",
+                "label": "Text Overlay",
+                "name": "text_overlay",
+                "type": "textarea",
+                "instructions": "Content for text overlay goes here.",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5b78c7c0337c8",
+                            "operator": "!=empty"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": 230,
+                "rows": 5,
+                "new_lines": "wpautop"
             }
         ],
         "location": [

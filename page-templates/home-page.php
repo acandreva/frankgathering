@@ -28,14 +28,18 @@ get_header(); ?>
         </div>
         
         <div class="row">
-            <div class="four columns twitter-feed">
-				<?php the_field( 'home_twitter_feed' ); ?>
-			</div>
-            <div class="eight columns link-boxes">
+            <div class="twelve columns link-boxes">
+				<?php 
+					$imageAArray  = get_field( 'button_1_image' );
+					$imageAAlt    = esc_attr($imageAArray['alt']);
+					$imageA       = esc_url($imageAArray['sizes']['full']);
+				?>
                 <a href="<?php the_field( 'button_1_link' ); ?>" title="<?php the_field( 'button_1_text' ); ?>" target="_blank">
-                    <div class="tri-box" style="background-image: url(https://allisoncandreva.com/test/wp-content/themes/frank/images/box_bg_img_1.png)" >    	
-                    <span role="img" aria-label="An image of buttons from frank 2016"> </span>
-                    <h5><?php the_field( 'button_1_text' ); ?></h5>
+    				<div class="tri-box" style="background-image: url(<?php echo $imageA; ?>)">
+                    <span role="img" aria-label="<?php echo $imageAAlt; ?>"> </span>
+                    	<div class="btn-overlay">
+							<h5><?php the_field( 'button_1_text' ); ?></h5>
+						</div>
                     </div>
                 </a>
                 <a href="<?php the_field( 'button_2_link' ); ?>" title="<?php the_field( 'button_2_text' ); ?>" target="_blank">
@@ -64,7 +68,7 @@ get_header(); ?>
 			$imageAlt    = esc_attr($imageArray['alt']);
 			$image       = esc_url($imageArray['sizes']['background-quote-img']);
 		?>
-    <div class="full-img-bg" style="background-image: url(<?php echo $image; ?>">
+    <div class="full-img-bg" style="background-image: url(<?php echo $image; ?>)">
     	<span role="img" aria-label="<?php echo $imageAlt; ?>"> </span>
 		<div class="quote-home">
 	        <?php the_field( 'text_overlay' ); ?>
