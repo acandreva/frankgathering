@@ -57,15 +57,15 @@
                     "id": ""
                 },
                 "return_format": "array",
-                "preview_size": "full",
+                "preview_size": "home-btn",
                 "library": "all",
-                "min_width": 200,
-                "min_height": 200,
+                "min_width": "",
+                "min_height": "",
                 "min_size": "",
-                "max_width": 200,
-                "max_height": 200,
+                "max_width": "",
+                "max_height": "",
                 "max_size": "",
-                "mime_types": "png, jpg"
+                "mime_types": ""
             },
             {
                 "key": "field_5ba84b945c512",
@@ -106,6 +106,30 @@
                 "maxlength": ""
             },
             {
+                "key": "field_5bad07e4600c8",
+                "label": "Button 2 Image",
+                "name": "button_2_image",
+                "type": "image",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "home-btn",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
                 "key": "field_5ba84ce0998da",
                 "label": "Button 2 Text",
                 "name": "button_2_text",
@@ -144,6 +168,30 @@
                 "maxlength": ""
             },
             {
+                "key": "field_5bad07fe600c9",
+                "label": "Button 3 Image",
+                "name": "button_3_image",
+                "type": "image",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "home-btn",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
                 "key": "field_5ba84cff998dc",
                 "label": "Button 3 Text",
                 "name": "button_3_text",
@@ -180,6 +228,30 @@
                 "prepend": "",
                 "append": "",
                 "maxlength": ""
+            },
+            {
+                "key": "field_5bad0817600ca",
+                "label": "Button 4 Image",
+                "name": "button_4_image",
+                "type": "image",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "home-btn",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
             },
             {
                 "key": "field_5ba84d15998de",

@@ -29,34 +29,63 @@ get_header(); ?>
         
         <div class="row">
             <div class="twelve columns link-boxes">
+				<!--first button-->
 				<?php 
-					$imageAArray  = get_field( 'button_1_image' );
-					$imageAAlt    = esc_attr($imageAArray['alt']);
-					$imageA       = esc_url($imageAArray['sizes']['home-btn']);
+					$image1Array  = get_field( 'button_1_image' );
+					$image1Alt    = esc_attr($image1Array['alt']);
+					$image1       = esc_url($image1Array['sizes']['home-btn']);
 				?>
                 <a href="<?php the_field( 'button_1_link' ); ?>" title="<?php the_field( 'button_1_text' ); ?>" target="_blank">
-    				<div class="tri-box" style="background-image: url(<?php echo $imageA; ?>)">
-                    <span role="img" aria-label="<?php echo $imageAAlt; ?>"> </span>
+    				<div class="tri-box" style="background-image: url(<?php echo $image1; ?>)">
+                    <span role="img" aria-label="<?php echo $image1Alt; ?>"> </span>
                     	<div class="btn-overlay">
 							<h5><?php the_field( 'button_1_text' ); ?></h5>
 						</div>
                     </div>
                 </a>
-                <a href="<?php the_field( 'button_2_link' ); ?>" title="<?php the_field( 'button_2_text' ); ?>" target="_blank">
-                    <div class="tri-box" style="background-image: url(https://allisoncandreva.com/test/wp-content/themes/frank/images/box_bg_img_2.png)" >    	
-                    <span role="img" aria-label="A woman attending frank 2016"> </span>
-                    <h5><?php the_field( 'button_2_text' ); ?></h5>
+				
+				<!--second button-->
+				<?php 
+					$image2Array  = get_field( 'button_2_image' );
+					$image2Alt    = esc_attr($image2Array['alt']);
+					$image2       = esc_url($image2Array['sizes']['home-btn']);
+				?>
+				<a href="<?php the_field( 'button_2_link' ); ?>" title="<?php the_field( 'button_2_text' ); ?>" target="_blank">
+    				<div class="tri-box" style="background-image: url(<?php echo $image2; ?>)">
+                    <span role="img" aria-label="<?php echo $image2Alt; ?>"> </span>
+                    	<div class="btn-overlay">
+		                    <h5><?php the_field( 'button_2_text' ); ?></h5>
+						</div>
                     </div>
                 </a>
-                <a href="<?php the_field( 'button_3_link' ); ?>" title="<?php the_field( 'button_3_text' ); ?>" target="_blank">
-                    <div class="tri-box" style="background-image: url(https://allisoncandreva.com/test/wp-content/themes/frank/images/box_bg_img_3.png)"                         <span role="img" aria-label="An image of buttons from frank 2016"> </span>
-                    <h5><?php the_field( 'button_3_text' ); ?></h5>
+				
+				<!--third button-->
+				<?php 
+					$image3Array  = get_field( 'button_3_image' );
+					$image3Alt    = esc_attr($image3Array['alt']);
+					$image3       = esc_url($image3Array['sizes']['home-btn']);
+				?>
+				<a href="<?php the_field( 'button_3_link' ); ?>" title="<?php the_field( 'button_3_text' ); ?>" target="_blank">
+    				<div class="tri-box" style="background-image: url(<?php echo $image3; ?>)">
+                    <span role="img" aria-label="<?php echo $image3Alt; ?>"> </span>                   
+                    	<div class="btn-overlay">
+							<h5><?php the_field( 'button_3_text' ); ?></h5>
+						</div>
                     </div>
                 </a>
-                <a href="<?php the_field( 'button_4_link' ); ?>" title="<?php the_field( 'button_4_text' ); ?>" target="_blank">
-                    <div class="tri-box" style="background-image: url(https://allisoncandreva.com/test/wp-content/themes/frank/images/box_bg_img.png)" >
-                    <span role="img" aria-label="A woman with an umbrella at frank"> </span>
-                    <h5><?php the_field( 'button_4_text' ); ?></h5>
+				
+				<!--fourth button-->
+				<?php 
+					$image4Array  = get_field( 'button_4_image' );
+					$image4Alt    = esc_attr($image4Array['alt']);
+					$image4       = esc_url($image4Array['sizes']['home-btn']);
+				?>
+				<a href="<?php the_field( 'button_4_link' ); ?>" title="<?php the_field( 'button_4_text' ); ?>" target="_blank">
+    				<div class="tri-box" style="background-image: url(<?php echo $image4; ?>)">
+                    <span role="img" aria-label="<?php echo $image4Alt; ?>"> </span>
+                    	<div class="btn-overlay">
+		                    <h5><?php the_field( 'button_4_text' ); ?></h5>
+						</div>
                     </div>
                 </a>
             </div>

@@ -512,11 +512,14 @@ header {
 }
 
 .tri-box {
+
+	margin: 10px 10px 10px 0;
+	text-align: center;
+}
+
+.btn-overlay {
 	width: 200px;
 	height: 200px;
-	margin: 10px 10px 10px 0;
-	color: #fff;
-	text-align: center;
 	display: -webkit-box;
 	display: -moz-box;
 	display: -ms-flexbox;
@@ -525,6 +528,8 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	color: #fff;
+	background-color: rgba(0,0,0,0.4);
 }
 
 .tri-box h5 {
@@ -542,10 +547,9 @@ header {
 	text-decoration: none;
 }
 
-.tri-box:hover {
-	background-position: 0 200px;
+.btn-overlay:hover {
 	color: #C54E90;
-	/*background-color: rgba(255,255,255,0.8);*/
+	background-color: rgba(0,0,0,0.75);
 }
 
 
@@ -851,6 +855,11 @@ footer nav ul li a:hover {
 		padding: 0 40px;
 	}
 	
+	.btn-overlay {
+		height: 190px;
+		width: 190px;
+	}
+	
 	.footer-content {
 		padding: 20px 40px;
 	}
@@ -859,6 +868,10 @@ footer nav ul li a:hover {
 @media (max-width: 1194px) {
 	.container {
 		width: 90%;
+	}
+	
+	.home-wrapper {
+		padding: 0 75px;
 	}
 }
 
