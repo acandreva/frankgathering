@@ -32,7 +32,7 @@ get_header(); ?>
 				<?php 
 					$imageAArray  = get_field( 'button_1_image' );
 					$imageAAlt    = esc_attr($imageAArray['alt']);
-					$imageA       = esc_url($imageAArray['sizes']['full']);
+					$imageA       = esc_url($imageAArray['sizes']['home-btn']);
 				?>
                 <a href="<?php the_field( 'button_1_link' ); ?>" title="<?php the_field( 'button_1_text' ); ?>" target="_blank">
     				<div class="tri-box" style="background-image: url(<?php echo $imageA; ?>)">
