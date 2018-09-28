@@ -8,8 +8,8 @@ get_header(); ?>
     <div class="hero">
         <div class="home-overlay">
             <div class="home-title">
-                <h1><?php the_field( 'video_overlay_main' ); ?></h1>
-                <h2><?php the_field( 'video_overlay_subtext' ); ?></h2>
+                <h2><?php the_field( 'video_overlay_main' ); ?></h2>
+                <h3><?php the_field( 'video_overlay_subtext' ); ?></h3>
             </div>
         </div>
     </div>
@@ -39,7 +39,7 @@ get_header(); ?>
     				<div class="tri-box" style="background-image: url(<?php echo $image1; ?>)">
                     <span role="img" aria-label="<?php echo $image1Alt; ?>"> </span>
                     	<div class="btn-overlay">
-							<h5><?php the_field( 'button_1_text' ); ?></h5>
+							<h2><?php the_field( 'button_1_text' ); ?></h2>
 						</div>
                     </div>
                 </a>
@@ -54,7 +54,7 @@ get_header(); ?>
     				<div class="tri-box" style="background-image: url(<?php echo $image2; ?>)">
                     <span role="img" aria-label="<?php echo $image2Alt; ?>"> </span>
                     	<div class="btn-overlay">
-		                    <h5><?php the_field( 'button_2_text' ); ?></h5>
+		                    <h2><?php the_field( 'button_2_text' ); ?></h2>
 						</div>
                     </div>
                 </a>
@@ -69,7 +69,7 @@ get_header(); ?>
     				<div class="tri-box" style="background-image: url(<?php echo $image3; ?>)">
                     <span role="img" aria-label="<?php echo $image3Alt; ?>"> </span>                   
                     	<div class="btn-overlay">
-							<h5><?php the_field( 'button_3_text' ); ?></h5>
+							<h2><?php the_field( 'button_3_text' ); ?></h2>
 						</div>
                     </div>
                 </a>
@@ -81,10 +81,10 @@ get_header(); ?>
 					$image4       = esc_url($image4Array['sizes']['home-btn']);
 				?>
 				<a href="<?php the_field( 'button_4_link' ); ?>" title="<?php the_field( 'button_4_text' ); ?>" target="_blank">
-    				<div class="tri-box" style="background-image: url(<?php echo $image4; ?>)">
+    				<div class="tri-box-last" style="background-image: url(<?php echo $image4; ?>)">
                     <span role="img" aria-label="<?php echo $image4Alt; ?>"> </span>
                     	<div class="btn-overlay">
-		                    <h5><?php the_field( 'button_4_text' ); ?></h5>
+		                    <h2><?php the_field( 'button_4_text' ); ?></h2>
 						</div>
                     </div>
                 </a>

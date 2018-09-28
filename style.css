@@ -430,14 +430,14 @@ header {
 	max-width: 500px;*/
 }
 
-.home-title h1 {
+.home-title h2 {
 	font-family: Lato, Arial, Helvetica, sans-serif !important;
 	font-weight: 600;
 	font-size: 70px;
 	margin: 0 0 1rem;
 }
 
-.home-title h2 {
+.home-title h3 {
 	font-family: Lato, Arial, Helvetica, sans-serif !important;
 	font-weight: 400;
 	font-size: 2.5rem;
@@ -512,10 +512,15 @@ header {
 }
 
 .tri-box {
-
 	margin: 10px 10px 10px 0;
 	text-align: center;
 }
+
+.tri-box-last {
+	margin: 10px 0;
+	text-align: center;
+}
+
 
 .btn-overlay {
 	width: 200px;
@@ -532,15 +537,12 @@ header {
 	background-color: rgba(0,0,0,0.4);
 }
 
-.tri-box h5 {
+.tri-box h2, .tri-box-last h2 {
 	font-size: 2.2rem;
 	margin: 0;
 	line-height: 1.1;
 	word-spacing: 3px;
-}
-
-.tri-box:last-child {
-	margin-right: 0;
+	letter-spacing: 0;
 }
 
 .link-boxes a {
@@ -747,6 +749,10 @@ table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before, tabl
 	outline: none;
 }
 
+.accordion-content p, .accordion-content {
+	font-size: 16px;
+}
+
 .accordion-content a {
 	color: #C54E90;
 }
@@ -849,7 +855,6 @@ footer nav ul li a:hover {
 	margin-right: 18px;
 }
 
-
 @media (max-width: 1284px) {
 	.siteheader {
 		padding: 0 40px;
@@ -865,13 +870,15 @@ footer nav ul li a:hover {
 	}
 }
 
+@media (max-width: 1250px) {
+	.home-wrapper {
+		padding: 0 75px;
+	}
+}
+
 @media (max-width: 1194px) {
 	.container {
 		width: 90%;
-	}
-	
-	.home-wrapper {
-		padding: 0 75px;
 	}
 }
 
@@ -886,6 +893,17 @@ footer nav ul li a:hover {
 	.seven.columns.sitenav {
 		margin-left: 0;
 		width: 60%;	
+	}
+}
+
+@media (max-width: 1070px) {
+	.btn-overlay {
+		height: 170px;
+		width: 170px;
+	}
+	
+	.tri-box h2, .tri-box-last h2 {
+		font-size: 2rem;
 	}
 }
 
@@ -936,17 +954,23 @@ footer nav ul li a:hover {
 		margin: 0;
 	}
 }
-
-@media (max-width: 970px) {
+@media (max-width: 960px) {
+	.link-boxes {
+		justify-content: center;
+		margin: 0;
+	}
+		
 	.tri-box {
-		width: 175px;
-		height: 175px;
-		margin: 10px;
-		background-position: 50% 7%;
+		margin: 10px 10px 10px 50px;
 	}
 	
-	.tri-box:hover {
-		background-position: 50% 96%;
+	.sec-box, .tri-box-last {
+		margin: 10px 50px 10px 10px;
+	}
+	
+	.btn-overlay {
+		height: 200px;
+		width: 200px;
 	}
 }
 
@@ -1012,15 +1036,6 @@ footer nav ul li a:hover {
 		margin-left: 10px;
 	}
 	
-	.link-boxes {
-		justify-content: center;
-		margin: 0;
-	}
-	
-	.tri-box {
-		margin: 20px;
-	}
-	
 	.page-nav {
 		display: none;
 	}
@@ -1084,12 +1099,12 @@ footer nav ul li a:hover {
 		margin: 0 30px;
 	}
 	
-	.home-title h1 {
+	.home-title h2 {
 		font-size: 40px;
 		margin: 0 0 1rem;
 	}
 	
-	.home-title h2 {
+	.home-title h3 {
 		font-size: 2.2rem;	
 	}
 	
@@ -1107,9 +1122,36 @@ footer nav ul li a:hover {
 	}
 }
 
-@media (max-width: 522px) {
+@media (max-width: 625px) {
 	.tri-box {
-		margin: 10px;
+		margin-left: 20px;
+	}
+	
+	.sec-box, .tri-box-last {
+		margin-right: 20px;
+	}
+}
+
+@media (max-width: 555px) {
+	.tri-box {
+		margin-left: 20px;
+	}
+	
+	.sec-box, .tri-box-last {
+		margin-right: 20px;
+	}
+}
+
+@media (max-width: 522px) {
+	.link-boxes {
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.tri-box, .sec-box, .tri-box-last {
+		height: 200px;
+		width: 200px;
+		margin: 20px 0 0 0;
 	}
 }
 
@@ -1128,17 +1170,6 @@ footer nav ul li a:hover {
 	
 	#event-tabs h2 {
 		font-size: 18px;	
-	}
-}
-
-@media (max-width: 477px) {
-	.tri-box {
-		height: 90px;
-		background-position: 50% 17.5%;
-	}
-	
-	.tri-box:hover {
-		background-position: 50% 82%;
 	}
 }
 
