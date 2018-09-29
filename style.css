@@ -9,15 +9,6 @@ License: Open
 Text Domain: frank_gathering
 */
 
-@import url("css/skeleton.css");
-@import url("css/normalize.css");
-
-/** {
-    color: #000000;
-    font-size: 14px;
-    line-height: 16px;
-}*/
-
 body {
 	font-family: Arial, Helvetica, sans-serif;
 }
@@ -67,11 +58,12 @@ a:hover {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+	margin-top: 100px;
 }
 
 .event-full-img-bg {
 	max-width: 1200px;
-	margin: 30px auto 0;
+	margin: 100px auto 0;
 }
 
 .event-full-img-bg img {
@@ -371,33 +363,6 @@ header {
 .social-navigation a[href*="spotify.com"]:before {
 	background-image: url(https://allisoncandreva.com/test/wp-content/themes/frank/images/spotify.png);
 }
-/*.social-navigation a[href*="facebook.com"]:before {
-	content: "\f082";
-}
-
-.social-navigation a[href*="twitter.com"]:before {
-	content: "\f081";
-}
-
-.social-navigation a[href*="instagram.com"]:before {
-	content: "\f16d";
-}
-
-.social-navigation a[href*="linkedin.com"]:before {
-	content: "\f08c";
-}
-
-.social-navigation a[href*="vimeo.com"]:before {
-	content: "\f194";
-}
-
-.social-navigation a[href*="youtube.com"]:before {
-	content: "\f431";
-}
-
-.social-navigation a[href*="spotify.com"]:before {
-	content: "\f1bc";
-}*/
 
 /*--------------------*/
 /*--Home Page Styles--*/
@@ -981,7 +946,7 @@ footer nav ul li a:hover {
 	
 	/*--------------------*/
 	/*--Event Page Styles--*/
-	/*--------------------*/
+	/*--------------------
 	
 	.event-full-img-bg {
 		margin: 50px auto 0;
@@ -1089,9 +1054,9 @@ footer nav ul li a:hover {
 		color: #C54E90;
 	}
 	
-	.event-full-img-bg {
+	/*.event-full-img-bg {
 		margin: 70px auto 0;
-	}
+	}*/
 }
 
 @media (max-width: 660px) {
@@ -1160,9 +1125,9 @@ footer nav ul li a:hover {
 		font-size: 14px;
 	}
 	
-	.event-full-img-bg {
+	/*.event-full-img-bg {
 		margin: 90px auto 0;
-	}
+	}*/
 	
 	#event-tabs label h1 {
 		font-size: 22px;
