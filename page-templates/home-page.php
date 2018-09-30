@@ -97,7 +97,7 @@ get_header(); ?>
 			$imageAlt    = esc_attr($imageArray['alt']);
 			$image       = esc_url($imageArray['sizes']['background-quote-img']);
 		?>
-    <div class="full-img-bg" style="background-image: url(<?php echo $image; ?>)">
+    <div class="home-full-img-bg" style="background-image: url(<?php echo $image; ?>)">
     	<span role="img" aria-label="<?php echo $imageAlt; ?>"> </span>
 		<div class="quote-home">
 	        <?php the_field( 'text_overlay' ); ?>

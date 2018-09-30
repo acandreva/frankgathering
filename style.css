@@ -53,12 +53,16 @@ a:hover {
 }
 
 /*--Full Image/Quote--*/
-.full-img-bg {
+.full-img-bg, .home-full-img-bg {
 	height: 500px;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	margin-top: 100px;
+}
+
+.home-full-img-bg {
+	margin-top: 10px;
 }
 
 .event-full-img-bg {
@@ -165,9 +169,8 @@ header {
 
 .main-menu-header ul li a {
     text-decoration: none;  
-   /* margin: 10px;
-    padding: 5px 0px 5px; */
-    font-weight: 300;
+	font-family: Lato, Arial, Helvetica, sans-serif;
+    font-weight: 400;
     font-size: 16px;
 	color: #000;
 	display: block;
@@ -190,16 +193,18 @@ header {
 	position: absolute;
 	top: 30px;
 	background-color: #fff;
-	border: .25px solid #73c92d;
+	border-top: .25px solid #73c92d;
+	border-right: .25px solid #73c92d;
+	border-left: .25px solid #73c92d;
 	width: auto;
 }
 
 .main-menu-header ul ul li {
 	float: none;
-	width: 190px;
+	width: 170px;
 	display: block;
 	border-bottom: .25px solid #73c92d;
-	padding: 15px 10px;
+	padding: 0 3px 8px;
 	margin: 0;
 }
 
@@ -334,6 +339,12 @@ header {
 	display: inline-block;
 	line-height: 33px;
 	text-align: center;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.social-navigation a:hover:before {
+	background-position: 0 -32px;
 }
 
 .social-navigation a[href*="facebook.com"]:before {
@@ -800,6 +811,7 @@ footer nav ul li a {
 	color: #C54E90;
 	text-decoration: none;
 	font-size: 14px;
+	font-family: Lato, Arial, Helvetica, sans-serif;
 }
 
 footer nav ul li a:hover {
@@ -810,6 +822,7 @@ footer nav ul li a:hover {
 
 .widget-footer p {
 	margin: 0 0 20px;
+	font-family: Lato, Arial, Helvetica, sans-serif;
 }
 
 .footer-right-content {
@@ -944,14 +957,6 @@ footer nav ul li a:hover {
 		padding: 20px;
 	}
 	
-	/*--------------------*/
-	/*--Event Page Styles--*/
-	/*--------------------
-	
-	.event-full-img-bg {
-		margin: 50px auto 0;
-	}
-	
 	/*------ Tabs ------*/
 	#event-details .ctu-ultimate-style-heading-1 {
 		color: #000;
@@ -1053,10 +1058,6 @@ footer nav ul li a:hover {
 		text-decoration: none;
 		color: #C54E90;
 	}
-	
-	/*.event-full-img-bg {
-		margin: 70px auto 0;
-	}*/
 }
 
 @media (max-width: 660px) {
@@ -1125,10 +1126,6 @@ footer nav ul li a:hover {
 		font-size: 14px;
 	}
 	
-	/*.event-full-img-bg {
-		margin: 90px auto 0;
-	}*/
-	
 	#event-tabs label h1 {
 		font-size: 22px;
 	}
@@ -1164,6 +1161,10 @@ footer nav ul li a:hover {
 		width: 27px;
 		height: 27px;
 		background-size: 27px;
+	}
+	
+	.social-navigation a:hover:before {
+		background-position: 0 -27px;
 	}
 	
 	#mobile-open {
