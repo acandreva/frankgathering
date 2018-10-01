@@ -7,7 +7,7 @@
 get_header(); ?>
 
 	<?php 
-        $imageArray  = get_field( 'image_with_overlay_2' );
+        $imageArray  = get_field( 'event_page_image' );
         $imageAlt    = esc_attr($imageArray['alt']);
         $image       = esc_url($imageArray['sizes']['background-quote-img']);
     ?>

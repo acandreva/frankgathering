@@ -100,7 +100,8 @@ get_header(); ?>
     <div class="home-full-img-bg" style="background-image: url(<?php echo $image; ?>)">
     	<span role="img" aria-label="<?php echo $imageAlt; ?>"> </span>
 		<div class="quote-home">
-	        <?php the_field( 'text_overlay' ); ?>
+	        <p>"<?php the_field( 'quote_overlay' ); ?>"</p>
+	        <p class="quote-author">- <?php the_field( 'quote_overlay_author' ); ?></p>
         </div>
 	</div>
 <?php get_footer(); ?>
