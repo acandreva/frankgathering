@@ -6,7 +6,7 @@
             {
                 "key": "field_5b7dda729be28",
                 "label": "Hero Image",
-                "name": "image_with_overlay_2",
+                "name": "hero_image_with_overlay",
                 "type": "image",
                 "instructions": "",
                 "required": 0,
@@ -29,8 +29,8 @@
             },
             {
                 "key": "field_5b7ddb0c9be29",
-                "label": "Text Overlay",
-                "name": "text_overlay_2",
+                "label": "Hero Quote Overlay",
+                "name": "hero_quote_overlay",
                 "type": "textarea",
                 "instructions": "Content for text overlay goes below.",
                 "required": 0,
@@ -49,9 +49,35 @@
                 },
                 "default_value": "",
                 "placeholder": "",
-                "maxlength": 230,
+                "maxlength": 205,
                 "rows": 5,
-                "new_lines": "wpautop"
+                "new_lines": ""
+            },
+            {
+                "key": "field_5bb17d92725b7",
+                "label": "Hero Quote Overlay Author",
+                "name": "hero_quote_overlay_author",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5b7dda729be28",
+                            "operator": "!=empty"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "anonymous, <em>frank<\/em> 2018",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
             }
         ],
         "location": [
@@ -65,13 +91,6 @@
                     "param": "post_type",
                     "operator": "==",
                     "value": "page"
-                }
-            ],
-            [
-                {
-                    "param": "page_template",
-                    "operator": "==",
-                    "value": "page-templates\/event-page.php"
                 }
             ]
         ],

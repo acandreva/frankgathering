@@ -293,7 +293,7 @@
             },
             {
                 "key": "field_5b78c7c0337c8",
-                "label": "Full Width Image",
+                "label": "Full-Width Image",
                 "name": "image_with_overlay",
                 "type": "image",
                 "instructions": "",
@@ -317,10 +317,10 @@
             },
             {
                 "key": "field_5b78c8cd337c9",
-                "label": "Text Overlay",
-                "name": "text_overlay",
+                "label": "Quote Overlay",
+                "name": "quote_overlay",
                 "type": "textarea",
-                "instructions": "Content for text overlay goes here.",
+                "instructions": "Content for quote overlay goes here.",
                 "required": 0,
                 "conditional_logic": [
                     [
@@ -337,9 +337,35 @@
                 },
                 "default_value": "",
                 "placeholder": "",
-                "maxlength": 230,
+                "maxlength": 205,
                 "rows": 5,
-                "new_lines": "wpautop"
+                "new_lines": ""
+            },
+            {
+                "key": "field_5bb17a67e4e0c",
+                "label": "Quote Overlay Author",
+                "name": "quote_overlay_author",
+                "type": "text",
+                "instructions": "Place authoring information for the text overlay here.",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5b78c7c0337c8",
+                            "operator": "!=empty"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "anonymous, frank 2018",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
             }
         ],
         "location": [
