@@ -9,8 +9,15 @@ License: Open
 Text Domain: frank_gathering
 */
 
+html {
+	height: 100%;
+}
+
 body {
 	font-family: Arial, Helvetica, sans-serif;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
 }
 
 .clear {clear: both;}
@@ -25,6 +32,7 @@ h6 {font-size: 1.1rem;}
 .container {
 	max-width: 1200px;
 	margin-top: 60px;
+	flex: 1 0 auto;
 }
 
 .nohero {
@@ -59,6 +67,7 @@ a:hover {
 	background-position: center;
 	background-size: cover;
 	margin-top: 100px;
+	flex-shrink: 0;
 }
 
 .home-full-img-bg {
@@ -68,6 +77,7 @@ a:hover {
 .event-full-img-bg {
 	max-width: 1200px;
 	margin: 100px auto 0;
+	flex-shrink: 0;
 }
 
 .event-full-img-bg img {
@@ -789,6 +799,7 @@ footer {
 	padding: 20px 0;
 	border-top: .25px solid #73c92d;
 	width: 100%;
+	flex-shrink: 0;
 }
 
 .footer-content {
