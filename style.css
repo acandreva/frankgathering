@@ -15,6 +15,11 @@ html {
 
 body {
 	font-family: Arial, Helvetica, sans-serif;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -moz-flex;
+	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;
 	height: 100vh;
@@ -277,6 +282,7 @@ header {
     width: 100%; /* 100% width */
     text-align: center; /* Centered text/links */
     margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+	font-family: Lato, Arial, Helvetica, sans-serif;
 }
 
 /* The navigation links inside the overlay */
@@ -296,8 +302,9 @@ header {
 /* Position the close button (top right corner) */
 .overlay .closebtn {
     position: absolute;
-    top: 20px;
-    right: 45px;
+    top: 0;
+    right: 15px;
+	padding: 0;
     font-size: 60px;
 }
 
