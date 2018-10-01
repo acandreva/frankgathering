@@ -93,9 +93,9 @@ a:hover {
 	max-width: 500px;
 	margin: 0 auto;
 	position: relative;
-	top: 57%;
-	-webkit-transform: translateY(-43%);
-	transform: translateY(-43%);
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
 }
 
 .quote-home {
