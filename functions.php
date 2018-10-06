@@ -15,6 +15,7 @@ function frank_setup() {
 	add_image_size( 'background-quote-img', 1200, 500, array( 'center', 'center' ) ); //(cropped)
 	add_image_size( 'speaker-img', 200, 200, array( 'top', 'center' ) ); //(cropped)
 	add_image_size( 'home-btn', 200, 200, array( 'center', 'center' ) ); //(cropped)
+	add_image_size( 'footer-logo', 60 ); //(width 60px, height unlimited)
 	
 	//Add support for custom menus
 	register_nav_menus( array(
@@ -36,6 +37,7 @@ function frank_img_sizes( $sizes ) {
         'background-quote-img' => __( 'Background for quote' ),
         'speaker-img' => __( 'Speaker' ),
         'home-btn' => __( 'Home Button' ),
+        'footer-logo' => __( 'Footer Logo' ),
     ) );
 }
 

@@ -852,6 +852,12 @@ footer nav ul li a:hover {
 	margin-right: 18px;
 }
 
+.uf-logo-footer {
+	float: right;
+	margin-top: 10px;
+	margin-right: 0;
+}
+
 @media (max-width: 1284px) {
 	.siteheader {
 		padding: 0 40px;
@@ -1013,6 +1019,10 @@ footer nav ul li a:hover {
 		margin: 0 0 10px;
 		padding: 0 0 10px;
 		border-bottom: .25px solid #73c92d;
+	}
+	
+	.uf-logo-footer {
+		float: none;
 	}
 }
 
