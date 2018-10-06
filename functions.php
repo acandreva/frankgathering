@@ -66,16 +66,6 @@ add_action( 'wp_enqueue_scripts', 'enqueue_icon_stylesheet' );
 
 function blank_widgets_init() {
     register_sidebar( array(
-        'name' => ('First Widget'),
-        'id' => 'first-widget',
-        'description' => 'Widget for our sidebar on pages', 
-        'before_widget' => '<div class="widget-sidebar">', 
-        'after_widget' => '</div>',
-        'before_title' => '<h2>',
-        'after_title' => '</h2>'
-        ));
-/*--- Footer Widget One--- */
-    register_sidebar( array(
         'name' => ('Footer Widget'),
         'id' => 'footer-widget',
         'description' => 'widget for the footer', 
