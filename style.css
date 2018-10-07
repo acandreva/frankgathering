@@ -762,9 +762,19 @@ table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before, tabl
 }
 
 /*--- 404 --*/
-.error-pg img {
-	max-width: 100%;
-	height: auto;
+.error-pg {
+	margin-top: 50px;
+	text-align: center;
+}
+
+.error-pg h2 {
+	font-size: 300px;
+	line-height: 1;
+	margin: 0;
+}
+
+.error-pg h3 {
+	font-size: 75px;
 }
 
 /*--- Contact Form --*/
@@ -1119,6 +1129,16 @@ footer nav ul li a:hover {
 	
 	.sec-box, .tri-box-last {
 		margin-right: 20px;
+	}
+}
+
+@media (max-width: 590px) {
+	.error-pg h2 {
+		font-size: 200px;
+	}
+
+	.error-pg h3 {
+		font-size: 50px;
 	}
 }
 
