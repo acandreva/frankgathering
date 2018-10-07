@@ -71,7 +71,7 @@ get_header(); ?>
 				</section>
 
 				<section id="content3" class="third-tab">
-					<?php the_field( 'event_third_tab_content' ); ?>
+					<?php the_field( 'event_third_tab_content' ); ?>				
 				</section>
         	</div>
    		</div>         

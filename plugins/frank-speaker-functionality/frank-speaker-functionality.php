@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Frank Speaker Functionality
-Description: This is a customized version of the Custom Post Popup https://gnanavel.wordpress.com/. Use this shortcode to display <strong>[CUSTOM_POST_POPUP type="post" posts_per_page="50" order="ASC"]</strong>
+Description: This is a customized version of the Custom Post Popup https://gnanavel.wordpress.com/. Use this shortcode to display <strong>[CUSTOM_POST_POPUP type="post" posts_per_page="50" order="ASC" orderby="title" category_name="speaker"]</strong>
 Version: 1.0
 Author: Allison Logan
 Author URI: http://allisoncandreva.com/
@@ -36,7 +36,8 @@ Class CustomPostPopup {
 			'posts_per_page' => '50',
 			'order' => 'ASC',
 			'orderby' => 'title',
-			'type'=>'type',		
+			'type'=>'type',	
+			'category_name' => 'speaker',
 		), $atts ) );
 		
 		$args = array(
@@ -44,6 +45,7 @@ Class CustomPostPopup {
 			'post_type' =>$atts['type'],
 			'order' => $atts['order'],
 			'orderby' => $atts['orderby'],
+			'category_name' => $atts['category_name'],
 			'no_found_rows' => true,
 		);
 		
@@ -61,26 +63,28 @@ Class CustomPostPopup {
 
 		if ( $query->have_posts() ) {
 			while ( $query->have_posts() ) : $query->the_post();
-				 $post_id = get_the_ID();
-				 
-				 $featimageURL = wp_get_attachment_url( get_post_thumbnail_id($post_id) );
+				$post_id = get_the_ID();
+
+				$featimageURL = wp_get_attachment_url( get_post_thumbnail_id($post_id) );
 
 
 				$feat_image       = ( !empty($featimageURL) ) ?  '<img src="'.$featimageURL.'" class="img-responsive testimonialimg">':'';	
 				//$featpopupimage   = ( !empty($featimageURL) ) ? '<img src="'.$featimageURL.'" class="img-responsive testimonialpopupimg">':'';	
-				
+
 				$imageArray  = get_field( 'speaker_portrait' );
 				$imageAlt    = esc_attr($imageArray['alt']);
 				$theimage       = esc_url($imageArray['sizes']['speaker-img']);
-				
+
 				$testimonials .= '<div class="speakerbox">';									
 				$testimonials .= '<p class="testimonial-text">'.$this->wpse69204_excerpt().'</p>'; 
 				$testimonials .= '<div class="fancyboxcont" id="post_'.$post_id.'"><div class="col-md-12 popupmailtxtcont"><img src="'.$theimage.'" alt="'.$imageAlt. '"/><h1>' .get_field('speaker_name'). '</h1><h2>' .get_field('speaker_title'). '</h2><p>' .get_field('speaker_bio'). '</p></div></div>';
-			
+
 				$testimonials .= '</div>';
 			endwhile;
 			wp_reset_postdata();
-		} 
+		} else { ?>
+			<p>We have so many impressive speakers we cannot wait for you to meet. We will begin announcing speakers soon.</p>
+		<?php }
 		$testimonials .= '</div>';
 		return $testimonials;
 	}
