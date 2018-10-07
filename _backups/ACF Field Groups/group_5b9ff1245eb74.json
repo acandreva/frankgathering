@@ -92,7 +92,7 @@
                 {
                     "param": "post_category",
                     "operator": "==",
-                    "value": "5"
+                    "value": "category:speaker"
                 },
                 {
                     "param": "post_type",
@@ -100,9 +100,9 @@
                     "value": "post"
                 },
                 {
-                    "param": "page_template",
-                    "operator": "!=",
-                    "value": "default"
+                    "param": "post_template",
+                    "operator": "==",
+                    "value": "single-post-speaker.php"
                 }
             ]
         ],
