@@ -11,7 +11,7 @@
 <header> 
       <div class="row siteheader">
           <div class="three columns siteinfo">
-              <a href="https://allisoncandreva.com/test">
+              <a href="http://frank.jou.ufl.edu/" title="frank home page">
                   <h1><?php bloginfo('name') ?></h1>
                   <p><?php bloginfo('description') ?></p>
               </a>
@@ -41,7 +41,7 @@
       </div><!--closes siteheader-->
 	  <div class="mobile-siteheader">
 		<div class="mobile-siteinfo">
-              <a href="https://allisoncandreva.com/test">
+              <a href="http://frank.jou.ufl.edu/" title="frank home page">
                   <h1><?php bloginfo('name') ?></h1>
                   <p><?php bloginfo('description') ?></p>
               </a>

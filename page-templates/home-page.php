@@ -17,7 +17,7 @@ get_header(); ?>
     <div class="container home-wrapper">
         <div class="row">
             <div class="twelve columns home-content">
-            	<h2 class="join-us-btn"><a href="https://allisoncandreva.com/test/frank-2019/">join us</a></h2>
+            	<h2 class="join-us-btn"><a href="http://frank.jou.ufl.edu/frank-gathering/">join us</a></h2>
                 <?php if (have_posts()) : 
                     /* OUR DATA CONTEXT IS DEFINED  */
                     while (have_posts()) : the_post(); ?> 

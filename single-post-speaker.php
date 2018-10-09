@@ -11,8 +11,8 @@
 
 get_header(); ?>
 
-    <div class="full-img-bg" style="background-image: url(https://allisoncandreva.com/test/wp-content/themes/frank/images/womanatfrank.jpg)">
-    	<span role="img" aria-label="A woman attends frank 2018"> </span>
+    <div class="full-img-bg" style="background-image: url(http://frank.jou.ufl.edu/wp-content/themes/frank2018update/images/womanatfrank.jpg)">
+    	<span role="img" aria-label="A woman attends frank"> </span>
 		<div class="speaker-pg-title">
 			 <?php 
                 if(get_field('speaker_name')){ 

@@ -6,6 +6,9 @@
 */
 
 get_header(); ?>
+	<div class="full-img-bg" style="background-image: url(http://frank.jou.ufl.edu/wp-content/themes/frank2018update/images/womanatfrank.jpg)">
+    	<span role="img" aria-label="A woman attends frank"> </span>
+	</div>
 	<div class="container">
         <div class="row">
             <div class="twelve columns">
