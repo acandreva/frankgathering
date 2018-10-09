@@ -14,7 +14,7 @@ get_header(); ?>
 		<div class="full-img-bg" style="background-image: url(<?php echo $image; ?>">
 			<span role="img" aria-label="<?php echo $imageAlt; ?>"> </span>
 				<?php if(get_field('hero_quote_overlay')){ //if the field is not empty
-					echo '<div class="quote"><p>"' . get_field( 'hero_quote_overlay' ) . '"</p><p class="quote-author">-' . get_field( 'hero_quote_overlay_author' ) . '</p></div>'; //display it
+					echo '<div class="quote"><p>"' . get_field( 'hero_quote_overlay' ) . '"</p><p class="quote-author">- ' . get_field( 'hero_quote_overlay_author' ) . '</p></div>'; //display it
 				} ?>
 		</div>
     	<div class="container">
