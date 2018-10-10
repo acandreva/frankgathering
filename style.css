@@ -133,10 +133,23 @@ header {
 	border-bottom: 1px solid #73c92d;
 }
 
+.siteheader {
+	max-width: 1200px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+}
+
+.siteinfo {
+	width: 27%;
+}
+
 .siteinfo img {
 	float: left;
 	padding-right: 10px;
 	width: 25%;
+	margin-top: 1em;
 }
 
 .siteinfo h1 {
@@ -153,15 +166,13 @@ header {
 	font-size: 14px;
 }
 
-.siteheader {
-	max-width: 1200px;
-	margin: auto;
-	display: block;
+.siteinfo a {
+	text-decoration: none;
 }
 
 /*--- Menu --- */
-.siteinfo a {
-	text-decoration: none;
+.sitenav {
+	width: 56%;
 }
 
 .main-menu-header {
@@ -171,7 +182,7 @@ header {
 }
 
 .main-menu-header ul {
-    width: 95%;
+    width: 545px;
 	margin: 0 auto; 
     padding: 0; 
     list-style-type: none; 
@@ -325,6 +336,10 @@ header {
 /*end overlay styles*/
 
 /*--Social Links--*/
+.socialnav {
+	width: 15%;
+}
+
 .social-links {
 	float: right;
 	margin: 40px 0;
@@ -885,10 +900,13 @@ footer nav ul li a:hover {
 	}
 }
 
-@media (max-width: 1090px) {
-	.seven.columns.sitenav {
-		margin-left: 0;
-		width: 60%;	
+@media (max-width: 1100px) {
+	.siteheader {
+		padding: 0 30px;
+	}
+	
+	.main-menu-header ul li a {
+		padding: 0 12px;
 	}
 }
 
@@ -921,15 +939,14 @@ footer nav ul li a:hover {
 	
 	.mobile-siteinfo {
 		margin-left: 20px;
-		width: 40%;
+		width: 50%;
 	}
 	
 	.mobile-siteinfo img {
 		float: left;
 		padding-right: 15px;
-		min-width: 60px;
-		max-width: 83px;
-		width: 25%;
+		margin-top: 1em;
+		width: 65px;
 	}
 	
 	.mobile-siteinfo h1 {
@@ -1091,11 +1108,7 @@ footer nav ul li a:hover {
 	}
 }
 
-@media (max-width: 660px) {
-	.mobile-siteinfo {
-		width: 45%;
-	}
-	
+@media (max-width: 660px) {	
 	.home-title {
 		margin: 0 30px;
 	}
@@ -1146,40 +1159,7 @@ footer nav ul li a:hover {
 	.sec-box, .tri-box-last {
 		margin-right: 20px;
 	}
-}
-
-@media (max-width: 522px) {
-	.link-boxes {
-		flex-direction: column;
-		align-items: center;
-	}
 	
-	.tri-box, .sec-box, .tri-box-last {
-		height: 200px;
-		width: 200px;
-		margin: 20px 0 0 0;
-	}
-}
-
-@media (max-width: 500px) {
-	p {
-		font-size: 14px;
-	}
-	
-	.mobile-siteinfo {
-		width: 40%;	
-	}
-	
-	#event-tabs label h1 {
-		font-size: 22px;
-	}
-	
-	#event-tabs h2 {
-		font-size: 18px;	
-	}
-}
-
-@media (max-width: 470px) {
 	.mobile-nav {
 		flex-direction: column-reverse;
 	}
@@ -1218,6 +1198,37 @@ footer nav ul li a:hover {
 	}
 }
 
+@media (max-width: 522px) {
+	.link-boxes {
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.tri-box, .sec-box, .tri-box-last {
+		height: 200px;
+		width: 200px;
+		margin: 20px 0 0 0;
+	}
+	
+	.mobile-siteinfo {
+		width: 65%;	
+	}
+}
+
+@media (max-width: 500px) {
+	p {
+		font-size: 14px;
+	}
+	
+	#event-tabs label h1 {
+		font-size: 22px;
+	}
+	
+	#event-tabs h2 {
+		font-size: 18px;	
+	}
+}
+
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
     .overlay a {font-size: 20px}
@@ -1229,9 +1240,10 @@ footer nav ul li a:hover {
 }
 
 @media (max-width: 440px) {
-	.mobile-siteinfo {
-		width: 50%;
-	}
+
+}
+
+@media (max-width: 440px) {
 	
 	.quote, .quote-home {
 		margin: 0 30px;

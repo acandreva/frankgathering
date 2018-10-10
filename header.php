@@ -9,8 +9,8 @@
 </head>
 <body>
 <header> 
-      <div class="row siteheader">
-          <div class="three columns siteinfo">
+      <div class="siteheader">
+          <div class="siteinfo">
 			  <a href="http://frank.jou.ufl.edu/" title="frank home page">
                   <?php $custom_logo_id = get_theme_mod( 'custom_logo' );
 				  		$logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
@@ -21,7 +21,7 @@
 						} ?>	
               </a>
           </div>
-          <div class="seven columns sitenav">
+          <div class="sitenav">
               <nav role="navigation" aria-label="<?php _e( 'Main Menu', 'frank-gathering' ); ?>" >
               <?php wp_nav_menu(array(
                   'theme_location' => 'main-menu',
@@ -30,7 +30,7 @@
               )); ?>
               </nav>
 		  </div>
-          <div class="two columns socialnav">
+          <div class="socialnav">
 			  <?php if ( has_nav_menu( 'social-links' ) ) : ?>
               <nav class="social-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Social Links', 'frank-gathering' ); ?>">
 				  <?php wp_nav_menu(array(
