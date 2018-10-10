@@ -1240,7 +1240,17 @@ footer nav ul li a:hover {
 }
 
 @media (max-width: 440px) {
-
+	.mobile-siteinfo {
+		width: 60%;	
+	}
+	
+	.mobile-siteinfo img {
+		width: 55px;
+		margin-top: 1.4em;
+	}
+	.mobile-siteinfo p {
+		font-size: 13px;
+	}
 }
 
 @media (max-width: 440px) {
