@@ -11,9 +11,14 @@
 <header> 
       <div class="row siteheader">
           <div class="three columns siteinfo">
-              <a href="http://frank.jou.ufl.edu/" title="frank home page">
-                  <h1><?php bloginfo('name') ?></h1>
-                  <p><?php bloginfo('description') ?></p>
+			  <a href="http://frank.jou.ufl.edu/" title="frank home page">
+                  <?php $custom_logo_id = get_theme_mod( 'custom_logo' );
+				  		$logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+						if ( has_custom_logo() ) {
+								echo '<img src="'. esc_url( $logo[0] ) .'"><h1>'. get_bloginfo( 'name' ) .'</h1> <p>' . get_bloginfo( 'description' ) . '</p>';
+						} else {
+								echo '<h1>'. get_bloginfo( 'name' ) .'</h1> <p>' . get_bloginfo( 'description' ) . '</p>';
+						} ?>	
               </a>
           </div>
           <div class="seven columns sitenav">
@@ -41,9 +46,14 @@
       </div><!--closes siteheader-->
 	  <div class="mobile-siteheader">
 		<div class="mobile-siteinfo">
-              <a href="http://frank.jou.ufl.edu/" title="frank home page">
-                  <h1><?php bloginfo('name') ?></h1>
-                  <p><?php bloginfo('description') ?></p>
+			  <a href="http://frank.jou.ufl.edu/" title="frank home page">
+                  <?php $custom_logo_id = get_theme_mod( 'custom_logo' );
+				  		$logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+						if ( has_custom_logo() ) {
+								echo '<img src="'. esc_url( $logo[0] ) .'"><h1>'. get_bloginfo( 'name' ) .'</h1> <p>' . get_bloginfo( 'description' ) . '</p>';
+						} else {
+								echo '<h1>'. get_bloginfo( 'name' ) .'</h1> <p>' . get_bloginfo( 'description' ) . '</p>';
+						} ?>	
               </a>
         </div>
 		<div class="mobile-nav">

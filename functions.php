@@ -17,6 +17,14 @@ function frank_setup() {
 	add_image_size( 'home-btn', 200, 200, array( 'center', 'center' ) ); //(cropped)
 	add_image_size( 'footer-logo', 60 ); //(width 60px, height unlimited)
 	
+	// Add support for custom logos
+	add_theme_support( 'custom-logo', array(
+		'width' => 70,
+		'height' => 70,
+		'flex-width' => false,
+		'flex-height' => false,
+	) );
+	
 	//Add support for custom menus
 	register_nav_menus( array(
 		  'main-menu' => __( 'Main Menu' ),
